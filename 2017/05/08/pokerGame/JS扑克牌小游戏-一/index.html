@@ -7,28 +7,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cczeng.github.io">
-  <title>我是如何利用Github Pages搭建起我的博客，细数一路的坑 | 曾亮的博客 | 诗和远方</title>
+  <title>JS扑克牌小游戏(一) | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、前言其实早在这之前我就一直想过写博客,但由于种种原因一直没有去学习这方面的知识,最近半个月(从开始动手到搭建好)一直陆陆续续的在着手这方面的工作。从开始到搭建完成的过程中遇到了很多困难，因为在这之前对Github一点了解都没有导致满头雾水,不断的跳进一个又一个坑,甚至想过放弃.但最后结果想必都知道了。在写如何搭建之前我觉得我们应该先从头开始了解。">
-<meta name="keywords" content="blog,Hexo">
+  <meta name="description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
+<meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我是如何利用Github Pages搭建起我的博客，细数一路的坑">
-<meta property="og:url" content="https://cczeng.github.io/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/index.html">
+<meta property="og:title" content="JS扑克牌小游戏(一)">
+<meta property="og:url" content="https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="1、前言其实早在这之前我就一直想过写博客,但由于种种原因一直没有去学习这方面的知识,最近半个月(从开始动手到搭建好)一直陆陆续续的在着手这方面的工作。从开始到搭建完成的过程中遇到了很多困难，因为在这之前对Github一点了解都没有导致满头雾水,不断的跳进一个又一个坑,甚至想过放弃.但最后结果想必都知道了。在写如何搭建之前我觉得我们应该先从头开始了解。">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create1.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create2.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create3.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create4.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create5.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create6.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create7.png">
-<meta property="og:image" content="https://cczeng.github.io/img/blog/create8.png">
-<meta property="og:updated_time" content="2017-05-08T14:06:07.230Z">
+<meta property="og:description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
+<meta property="og:image" content="https://cczeng.github.io/img/pokerGame/yanshi.gif">
+<meta property="og:updated_time" content="2017-05-09T08:47:54.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我是如何利用Github Pages搭建起我的博客，细数一路的坑">
-<meta name="twitter:description" content="1、前言其实早在这之前我就一直想过写博客,但由于种种原因一直没有去学习这方面的知识,最近半个月(从开始动手到搭建好)一直陆陆续续的在着手这方面的工作。从开始到搭建完成的过程中遇到了很多困难，因为在这之前对Github一点了解都没有导致满头雾水,不断的跳进一个又一个坑,甚至想过放弃.但最后结果想必都知道了。在写如何搭建之前我觉得我们应该先从头开始了解。">
-<meta name="twitter:image" content="https://cczeng.github.io/img/blog/create1.png">
+<meta name="twitter:title" content="JS扑克牌小游戏(一)">
+<meta name="twitter:description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
+<meta name="twitter:image" content="https://cczeng.github.io/img/pokerGame/yanshi.gif">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
   
@@ -169,141 +162,228 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我是如何利用Github-Pages搭建起我的博客——细数一路的坑" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-pokerGame/JS扑克牌小游戏-一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我是如何利用Github Pages搭建起我的博客，细数一路的坑
+      JS扑克牌小游戏(一)
     </h1>
   
 
         
-        <a href="/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/" class="archive-article-date">
-  	<time datetime="2017-05-03T09:02:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-03</time>
+        <a href="/2017/05/08/pokerGame/JS扑克牌小游戏-一/" class="archive-article-date">
+  	<time datetime="2017-05-08T08:08:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h1><p>其实早在这之前我就一直想过写博客,但由于种种原因一直没有去学习这方面的知识,最近半个月(从开始动手到搭建好)一直陆陆续续的在着手这方面的工作。从开始到搭建完成的过程中遇到了很多困难，因为在这之前对Github一点了解都没有导致满头雾水,不断的跳进一个又一个坑,甚至想过放弃.但最后结果想必都知道了。在写如何搭建之前我觉得我们应该先从头开始了解。  </p>
-<a id="more"></a>
-<h2 id="那么我为什么要建立自己的博客？——引自-为什么你要写博客？—陈素封"><a href="#那么我为什么要建立自己的博客？——引自-为什么你要写博客？—陈素封" class="headerlink" title="那么我为什么要建立自己的博客？——引自:为什么你要写博客？—陈素封"></a>那么我为什么要建立自己的博客？<em>——<a href="https://zhuanlan.zhihu.com/p/19743861?columnSlug=cnfeat" target="_blank" rel="external">引自:为什么你要写博客？—陈素封</a></em></h2><h3 id="1-“提高将事情讲清楚的能力”"><a href="#1-“提高将事情讲清楚的能力”" class="headerlink" title="1.“提高将事情讲清楚的能力”."></a>1.“提高将事情讲清楚的能力”.</h3><blockquote>
-<p>在写博客之前你需要花更多的时间来表达出你的想法，表达你想法之前你得先对你要表达的东西充分理解并理清思路和逻辑。</p>
-<blockquote>
-<p>很多东西你以为懂了，但当你在写下来的时候，你就觉得无从下手了。   </p>
-</blockquote>
-</blockquote>
-<h3 id="2-分享带来的连锁反应"><a href="#2-分享带来的连锁反应" class="headerlink" title="2.分享带来的连锁反应"></a>2.分享带来的连锁反应</h3><blockquote>
-<p>“通过分享，你获得了直接而快速的回报，你最终或许会发现你已将版权和“保留所有权利”抛诸脑后。新的经济学准则是：参与你作品的人越多，回报越高。在分享主义里，如果你愿意你可以保留所有权，但是我乐于分享。” by 毛向辉 《分享主义：一场思维革命》   </p>
-</blockquote>
-<h3 id="3-记录成长"><a href="#3-记录成长" class="headerlink" title="3.记录成长"></a>3.记录成长</h3><blockquote>
-<p>我们每个人都应该有这样的经历:隔了很久我们回头看看以前的自己会发现特别傻x,但正是因为这些傻x的岁月让我们不断成长,你在成长的过程中不断的修正自己的错误。   </p>
-</blockquote>
-<h3 id="4-探索未知的世界"><a href="#4-探索未知的世界" class="headerlink" title="4.探索未知的世界"></a>4.探索未知的世界</h3><blockquote>
-<p>世界不止是你的家，你的公司，你的朋友圈，你应该去发现一个更大的世界，通过写博客，你会知道世界上还有很多人像你一样在写博客，这些人和知识正在世界的某个角落在等着你。   </p>
-</blockquote>
-<h3 id="5-帮助更多想要获取帮助的人"><a href="#5-帮助更多想要获取帮助的人" class="headerlink" title="5.帮助更多想要获取帮助的人"></a>5.帮助更多想要获取帮助的人</h3><blockquote>
-<p>这点我相信大家由为感触,在你探索一个未知的知识领域的时候,往往被撞的一鼻子灰.幸运的人很快就能找到一个“师傅”或一篇很好的文章,但大多数往往在找“教程”的过程中就已经放弃了.因为他们没能够找到刚好理解的文章.   </p>
-</blockquote>
-<h1 id="一、开始搭建Github-Pages"><a href="#一、开始搭建Github-Pages" class="headerlink" title="一、开始搭建Github Pages"></a>一、开始搭建Github Pages</h1><p>参考:<a href="http://cyzus.github.io/2015/06/21/github-build-blog/" target="_blank" rel="external">傻瓜都可以利用github pages建博客</a><br>参考:<a href="https://segmentfault.com/a/1190000004947261" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a><br> <em>可以选择阅读完以上两篇教程后倒回来看不懂的地方.</em>   </p>
-<h2 id="1-使用前了解Github"><a href="#1-使用前了解Github" class="headerlink" title="1.使用前了解Github"></a>1.使用前了解Github</h2><blockquote>
-<p>GitHub是一个共享虚拟主机服务，用于存放使用Git版本控制的软件代码和内容项目(引自维基百科）  </p>
-</blockquote>
-<h2 id="2-为什么选择Github"><a href="#2-为什么选择Github" class="headerlink" title="2.为什么选择Github?"></a>2.为什么选择Github?</h2><blockquote>
-<p>github有一个很有爱的项目，叫做github pages，这个项目是给开发者建立一个私人页面，上面用来分享新颖的想法和自己写的代码.   </p>
-</blockquote>
-<h2 id="3-注册属于你自己的Github账号"><a href="#3-注册属于你自己的Github账号" class="headerlink" title="3.注册属于你自己的Github账号"></a>3.注册属于你自己的Github账号</h2><p>首先进入<a href="https://github.com/" target="_blank" rel="external">Github</a>站点,然后进行注册(此处不做详细说明可自行阅读<a href="http://jingyan.baidu.com/article/455a9950abe0ada167277864.html" target="_blank" rel="external">github教程：[1]注册github</a>)   </p>
-<p>注册完毕后你就拥有了自己的代码仓库了.  </p>
-<h2 id="4-创建仓库"><a href="#4-创建仓库" class="headerlink" title="4.创建仓库"></a>4.创建仓库</h2><p>在Github首页右上角头像左侧加号点选择 New repositor(新存储库)或<a href="https://github.com/new" target="_blank" rel="external">点击这里</a>进行创建一个仓库.</p>
-<p><img src="/img/blog/create1.png" alt="创建一个仓库">   </p>
-<h2 id="5-开启Github-Pages"><a href="#5-开启Github-Pages" class="headerlink" title="5.开启Github Pages"></a>5.开启Github Pages</h2><p>进入设置<br><img src="/img/blog/create2.png" alt="设置">  </p>
-<p>找到这一块  </p>
-<p><img src="/img/blog/create3.png" alt="设置">  </p>
-<p>当你的仓库名为：用户名.github.io 之后默认开启Github Pages  </p>
-<p>现在随便选择一个主题,选择上图的 Choose a theme 之后会跳转到下面这个页面   </p>
-<p><img src="/img/blog/create4.png" alt="设置">  </p>
-<p>设置完毕后你就可以通过  username.github.io(username为你的用户名访问你的博客了)   </p>
-<h2 id="6-下载Github-客户端"><a href="#6-下载Github-客户端" class="headerlink" title="6.下载Github 客户端"></a>6.下载Github 客户端</h2><p>根据自己的系统自行选择下载安装   </p>
-<p><a href="https://desktop.github.com/" target="_blank" rel="external">点击前往Github下载</a>   </p>
-<p>下载安装好之后登陆你的github.   </p>
-<p>从你的仓库添加到本地   </p>
-<p><img src="/img/blog/create5.png" alt="设置">  </p>
-<p>接下来就需要搭建Hexo了   </p>
-<h1 id="二、Hexo"><a href="#二、Hexo" class="headerlink" title="二、Hexo"></a>二、Hexo</h1><p>要使用Hexo,需要安装Nodejs以及Git   </p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载Node.js</a><br>参考:<a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">安装Node.js</a>   </p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p><a href="https://git-scm.com/download/" target="_blank" rel="external">下载Git</a>   </p>
-<p>一路点击Next就行了.   </p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在你需要安装Hexo的目录下(新建一个文件夹)右键选择 Git Bash   </p>
-<pre><code>npm install hexo-cli -g   
-hexo init #初始化网站   
-npm install   
-hexo g #生成或 hexo generate   
-hexo s #启动本地服务器 或者 hexo server,这一步之后就可以通过http://localhost:4000  查看了
-</code></pre><p><em>详细命令请参考<a href="https://hexo.io/docs/commands.html" target="_blank" rel="external">Hexo文档</a></em>   </p>
-<p>这里介绍一下怎么创建一篇文章   </p>
-<pre><code>hexo new &quot;文章名&quot; #新建文章
-hexo new page &quot;页面名&quot; #新建页面   
-</code></pre><p>常用简写   </p>
-<pre><code>hexo n == hexo new
-hexo g == hexo generate
-hexo s == hexo server
-hexo d == hexo deploy
-</code></pre><p>新建一篇文章后就可以<a href="http://localhost:4000/" target="_blank" rel="external">预览</a>了,在hexo new之后执行一次生成hexo g再执行hexo s启动本地服务器,如果之前还在hexo s 按Ctrl + C 结束.   </p>
-<h2 id="添加主题"><a href="#添加主题" class="headerlink" title="添加主题"></a>添加主题</h2><h3 id="安装主题-yilia主题"><a href="#安装主题-yilia主题" class="headerlink" title="安装主题(yilia主题):"></a>安装主题(yilia主题):</h3><pre><code>hexo clean
-git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia   
-</code></pre><h3 id="启动主题"><a href="#启动主题" class="headerlink" title="启动主题"></a>启动主题</h3><p>找到目录下的_config.yml 文件,打开找到 theme：属性并设置为yilia   </p>
-<h3 id="更新主题"><a href="#更新主题" class="headerlink" title="更新主题"></a>更新主题</h3><pre><code>cd themes/yilia
-git pull
-hexo g
-hexo s
-</code></pre><p>此时刷新<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>页面就能看到新的主题了.   </p>
-<h2 id="使用Hexo-deploy部署到github"><a href="#使用Hexo-deploy部署到github" class="headerlink" title="使用Hexo deploy部署到github"></a>使用Hexo deploy部署到github</h2><p>还是编辑根目录下_config.yml文件   </p>
-<pre><code>deploy:
-type: git
-repo: git@github.com:cczeng/cczeng.github.io.git  #这里的网址填你自己的
-branch: master   
-</code></pre><p>保存后需要提前安装一个扩展：</p>
-<pre><code>npm install hexo-deployer-git --save   
-</code></pre><p>接下来就是将Hexo部署到我们的Github仓库上   </p>
-<h1 id="三、部署到Github"><a href="#三、部署到Github" class="headerlink" title="三、部署到Github"></a>三、部署到Github</h1><h2 id="1-检查SSH-keys的设置"><a href="#1-检查SSH-keys的设置" class="headerlink" title="1.检查SSH keys的设置"></a>1.检查SSH keys的设置</h2><p>以下命令均是在Git bash里输入   </p>
-<pre><code>cd ~/.ssh
-ls
-#此时会显示一些文件
-mkdir key_backup
-cp id_rsa* key_backup
-rm id_rsa*  
-#以上三步为备份和移除原来的SSH key设置
-ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot; #生成新的key文件,邮箱地址填你的Github地址
-#Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;
-#接下来会让你输入密码
-</code></pre><p>之后就可以看到成功的界面。   </p>
-<h2 id="2-添加SSH-Key到Github"><a href="#2-添加SSH-Key到Github" class="headerlink" title="2.添加SSH Key到Github"></a>2.添加SSH Key到Github</h2><p>进入<a href="https://github.com/" target="_blank" rel="external">github首页</a>   </p>
-<p><img src="/img/blog/create6.png" alt="设置">  </p>
-<p>添加SSH Key。   </p>
-<p><img src="/img/blog/create7.png" alt="设置">   </p>
-<p>找到 系统当前用户目录下(开启查看隐藏文件) <strong>C:\Users\用户名\ .ssh</strong> id_rsa.pub文件以文本方式打开。打开之后全部复制到key中   </p>
-<p><img src="/img/blog/create8.png" alt="设置">   </p>
-<p>到了这就可以测试一下是否成功了:   </p>
-<pre><code>ssh -T git@github.com
-#之后会要你输入yes/no,输入yes就好了。
-</code></pre><p>设置你的账号信息:   </p>
-<pre><code>git config --global user.name &quot;你的名字&quot;     #真实名字不是github用户名
-git config --global user.email &quot;邮箱@邮箱.com&quot;    #github邮箱
-</code></pre><h2 id="3-部署到github"><a href="#3-部署到github" class="headerlink" title="3.部署到github"></a>3.部署到github</h2><pre><code>hexo d
-</code></pre><p>这时再刷新  username.github.io 就可以看到你的博客了。   </p>
-<p>到了这你以为就结束了吗？没有，还有坑没有给你们填好。  </p>
-<h1 id="四、最后的填坑"><a href="#四、最后的填坑" class="headerlink" title="四、最后的填坑"></a>四、最后的填坑</h1><ol>
-<li>不知道怎么修改yilia主题?(修改<em>themes/yilia/_config.yml</em>)请参考<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">一个简洁优雅的hexo主题 </a>   </li>
-<li>Hexo主题配置(根目录<strong>_config.yml</strong>文件)</li>
-<li>电脑重装了系统/多台电脑写博客？那就赶紧戳这里<a href="https://www.zhihu.com/question/21193762" target="_blank" rel="external">使用hexo，如果换了电脑怎么更新博客？</a>   </li>
-<li>不知道如何编写Markdown语法？<a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Markdown——入门指南</a>   </li>
-<li>想要给网站添加图片？请把图片放入根目录 <em>source\ </em> 下建立一个文件夹，当你执行hexo g的时候此文件夹自动生成到public中。</li>
+        <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><h5 id="今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求："><a href="#今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：" class="headerlink" title="今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求："></a>今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：</h5><a id="more"></a>   
+<h2 id="第一阶段-老师的基本要求-："><a href="#第一阶段-老师的基本要求-：" class="headerlink" title="第一阶段(老师的基本要求)："></a>第一阶段(老师的基本要求)：</h2><ol>
+<li>随机出3张牌</li>
+<li>实现鼠标经过开牌，鼠标离开盖牌   </li>
 </ol>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>可能有部分细节疏漏，请参考：<br><em>全文参考:<a href="http://cyzus.github.io/2015/06/21/github-build-blog/" target="_blank" rel="external">傻瓜都可以利用github pages建博客</a></em><br><em>全文参考:<a href="https://segmentfault.com/a/1190000004947261" target="_blank" rel="external">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></em><br><strong>如果您觉得对你有帮助，请转载给更多需要的人(转载时请注明出处)。谢谢！</strong>   </p>
+<h2 id="第二阶段-自我要求——进阶"><a href="#第二阶段-自我要求——进阶" class="headerlink" title="第二阶段(自我要求——进阶):"></a>第二阶段(自我要求——进阶):</h2><ol>
+<li>实现用户指定n张牌</li>
+<li>在鼠标经过开牌、鼠标离开盖牌的基础上添加单击开牌(鼠标离开不再盖牌)</li>
+<li>在单张牌开牌盖牌的基础上添加一键全部开牌、盖牌   </li>
+</ol>
+<p>有了要求以后就能进行下一步的展开了这里先放上效果&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Subpage/pokerGame/index.html">点击这里查看效果</a>   </p>
+<p><img src="/img/pokerGame/yanshi.gif" alt="演示效果"></p>
+<h1 id="二、如何设计？"><a href="#二、如何设计？" class="headerlink" title="二、如何设计？"></a>二、如何设计？</h1><p>这步其实很多人都会忽略，觉得我已经有要求了，可以不用设计直接上手撸代码了。但其实等你撸代码的时候你就会发现越来越多的问题，比如写着写着发现要添加一个功能很难，原因就在于你&nbsp;&nbsp;&nbsp;<strong>没有在撸代码之前稍微花一点时间去思考这个程序大致的框架要怎样来搭建</strong>.(经验多的大牛花在这上面的时间相对更少)   </p>
+<h3 id="1-nbsp-nbsp-怎样展示"><a href="#1-nbsp-nbsp-怎样展示" class="headerlink" title="1)&nbsp;&nbsp;怎样展示"></a>1)&nbsp;&nbsp;怎样展示</h3><ol>
+<li>考虑到之前要求用户输入发牌的数量，我们在设计的时候就应该使用js的动态创建元素，而不是直接在HTML里直接写入固定元素个数。</li>
+<li>1个输入框、1个提交按钮、1个翻全部牌按钮、1个盖上全部牌按钮</li>
+<li>把创建牌/添加牌写成一个函数以便后期扩展   </li>
+</ol>
+<h3 id="2-nbsp-nbsp-细节"><a href="#2-nbsp-nbsp-细节" class="headerlink" title="2)&nbsp;&nbsp;细节"></a>2)&nbsp;&nbsp;细节</h3><ol>
+<li>既然涉及到开牌和盖牌,那就需要改变img标签的src属性，在这怎么保存当前这张牌真正的牌呢？我用了index属性来保存以便取出，这个方法不是最完美的。</li>
+<li>在开牌和盖牌的时候是否能更形象呢？比如加入css3动画的Y轴翻转。   </li>
+</ol>
+<p><strong>有了这些就可以进行下一步展开了</strong></p>
+<h1 id="三、编写代码"><a href="#三、编写代码" class="headerlink" title="三、编写代码"></a>三、编写代码</h1><h2 id="1-nbsp-nbsp-网页布局"><a href="#1-nbsp-nbsp-网页布局" class="headerlink" title="1)&nbsp;&nbsp;网页布局"></a>1)&nbsp;&nbsp;网页布局</h2><p>在html文件body里加入:   </p>
+<pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">请输入要洗牌的个数.</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"poker"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</code></pre><p>这里的div是用来存放扑克牌的。至于扑克牌素材请自行百度下载。   </p>
+<h2 id="3-nbsp-nbsp-CSS代码"><a href="#3-nbsp-nbsp-CSS代码" class="headerlink" title="3)&nbsp;&nbsp;CSS代码"></a>3)&nbsp;&nbsp;CSS代码</h2><p>这里考虑到是多张图，我们就使用类的方法来添加样式。<br>其中固定了每一张图的长宽，设置了浮动和外边距，还设置了动画时间(翻牌效果)。<br>当把.brandBack类添加给图片的时候就能看到图片翻转的效果了。<br>    <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">	.brand &#123;</div><div class="line">		width: 105px;</div><div class="line">		height: 150px;</div><div class="line">		float: left;</div><div class="line">		margin-right: 10px;</div><div class="line">		margin-top: 20px;</div><div class="line">		transition: all 0.8s;</div><div class="line">	&#125;</div><div class="line">	.brandBack&#123;</div><div class="line">		transform: rotateY(360deg);</div><div class="line">		transition:all 0.8s;</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="3-nbsp-nbsp-JavaScript代码"><a href="#3-nbsp-nbsp-JavaScript代码" class="headerlink" title="3)&nbsp;&nbsp;JavaScript代码"></a>3)&nbsp;&nbsp;JavaScript代码</h2><p><strong>首先我们有大量的图片,这些图片的路径我们用一个数组来存储(考虑过用对象后来觉得太麻烦)，我们还要用一个数组来存放每一张图片对应的牌面值</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//存放牌面值的数组  </span></div><div class="line"><span class="keyword">var</span> chars = [<span class="string">'A'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>,<span class="string">'6'</span>,<span class="string">'7'</span>,<span class="string">'8'</span>,<span class="string">'9'</span>,<span class="string">'10'</span>,<span class="string">'J'</span>,<span class="string">'Q'</span>,<span class="string">'K'</span>];</div><div class="line"><span class="comment">//每一张牌的路径,brands下标对应A-K(13张)</span></div><div class="line"><span class="keyword">var</span> brands = [<span class="string">"img/14.jpg"</span>,<span class="string">"img/15.jpg"</span>,<span class="string">"img/16.jpg"</span>,<span class="string">"img/4.jpg"</span>,<span class="string">"img/5.jpg"</span>,<span class="string">"img/6.jpg"</span>,<span class="string">"img/7.jpg"</span>,<span class="string">"img/21.jpg"</span>,<span class="string">"img/35.jpg"</span>,<span class="string">"img/49.jpg"</span>,<span class="string">"img/11.jpg"</span>,<span class="string">"img/12.jpg"</span>,<span class="string">"img/13.jpg"</span>];</div></pre></td></tr></table></figure></p>
+<p>上面均是全局数组，不需要放在任何function函数中   </p>
+<p><strong>有了牌面值、每一张牌的路径,那么我们是不是还缺一个牌的背面呢？</strong>   </p>
+<pre><code>//牌的背面
+var back = &quot;img/back.jpg&quot;;
+</code></pre><p><strong><em>注意：</em></strong>所有牌的路径以你自己的路径为准，这里可能和你们的不一样。   </p>
+<h5 id="牌的随机面值"><a href="#牌的随机面值" class="headerlink" title="牌的随机面值"></a>牌的随机面值</h5><p>这里我们需要用到js的随机函数Math.random()来创建一个随机数，创建一个1-13的随机数来对应A-K。   </p>
+<pre><code>Math.random()*13;   
+</code></pre><p>但是你会发现这样随机出来的数是小数，那怎么办？js其实还提供了一个方法：</p>
+<blockquote>
+<p>ceil() 方法可对一个数进行上舍入。——来自<a href="http://www.w3school.com.cn/jsref/jsref_ceil.asp" target="_blank" rel="external">W3C网</a><br>那么我们为了方便就把这个生成随机数打包成一个函数:     </p>
+</blockquote>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//生成一个1-13的随机数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateMixed</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> id = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*<span class="number">13</span>);</div><div class="line">	<span class="keyword">return</span> id;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><p><em>以上函数就是生成一个随机数的函数了，后面我们只需要调用它就可以返回一个1-13的随机数给我们了。</em></p>
+<h5 id="创建一张“牌”"><a href="#创建一张“牌”" class="headerlink" title="创建一张“牌”"></a>创建一张“牌”</h5><p>我们有了之前的牌面值和路径之后是不是还缺少一个真正的牌在HTML DOM里面呢？那么我们就利用JS的动态创建来把我们的扑克牌添加进去吧！   </p>
+<pre><code>var img = document.createElement(&apos;img&apos;);   
+</code></pre><p>上面这条语句就在HTML文档树中添加了一个img标签元素了，也就是我们所说的牌，但是这张牌还没有在HTML中出现，他只是DOM世界的一个孤儿，我们稍后再把它插入HTML文档中。   </p>
+<pre><code>var num = generateMixed();
+var imgSrc = brands[num-1];   
+</code></pre><p>这两句是干嘛的呢？num变量是用来保存随机出来的数值，imgSrc是把随机出来的数值对应到brands数组(存放着图片路径)中的路径，这里num-1是因为数组下标是从0开始的。   </p>
+<p>那么有了img标签和面值、路径后我们是不是应该给img标签添加路径了呢？<br><strong>这里我们还需要考虑一个问题，所有的牌出现的时候都应该是盖着的，那我们要怎么实现保存每一张牌的正面呢？</strong><br>这里我想到了两个方法：   </p>
+<ol>
+<li>使用数组保存每一张牌的正面图片路径   </li>
+<li>在img标签里加入一个index属性用来存放当前牌的正面路径   </li>
+</ol>
+<p>刚开始你可能会有疑惑，为什么要这样做？<strong>因为你翻牌的效果实际上就是改变了img标签的src属性</strong>   </p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">img.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">img.setAttribute(<span class="string">'alt'</span>,<span class="string">'扑克'</span>);</div><div class="line">img.setAttribute(<span class="string">'index'</span>,imgSrc);</div><div class="line">img.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">img.setAttribute(<span class="string">'row'</span>,chars[num<span class="number">-1</span>]);</div></pre></td></tr></table></figure>
+</code></pre><p>每一行代码作用:   </p>
+<ol>
+<li>由于发的牌第一次出现应该是背面,所以我们先把背面牌路径给src</li>
+<li>当用户无法查看图像时（可能由于网速太慢、错误的 src 属性、或者用户使用的是屏幕阅读器），alt 属性为图像提供了替代的文本。<a href="http://www.w3school.com.cn/html5/att_img_alt.asp" target="_blank" rel="external">引自W3C</a>   </li>
+<li>把当前牌的真正路径放入index属性中   </li>
+<li>添加class类</li>
+<li>添加row属性用来存放牌面值   </li>
+</ol>
+<p><em>在第3点、第5点其实不应该直接把面值和路径直接放在img标签属性中。但为了方便我选择把它放在了img标签中。在以后的项目中尽量不要这么做，</em>   </p>
+<h5 id="为你的牌添加事件"><a href="#为你的牌添加事件" class="headerlink" title="为你的牌添加事件"></a>为你的牌添加事件</h5><p>既然我们要做鼠标进过的时候开牌离开盖牌，那么就要用到onmouseover、onmouseout事件，<strong>(自我要求)</strong>这个时候我们得多想想，难道我只能鼠标移在一张牌的时候看牌吗？如果我要看多张牌呢？所以我添加了一个onclick事件，在点击这张牌之后一直是开牌状态<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">img.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	flop(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">img.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	flopBack(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">img.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	turn(<span class="keyword">this</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>分别设置了三个事件，每个事件触发时都会执行一个函数。分别是:1、开牌2、盖牌3、点击一直开牌<br><strong>开牌函数</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//翻牌事件</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flop</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>由于我们是把当前元素(this)传递进来了，我们只需要修改src属性就可以把正面牌展示出来了，但是直接修改就没有翻牌动画了，所以在修改之前我们需要添加brandBack类，实际上就是一个转牌动画。   </p>
+<p><strong>盖牌函数</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//盖牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flopBack</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>和开牌一样，我们只需要把brandBack类去掉就行了，再把图片背面替换过来。   </p>
+<p><strong>点击翻牌</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//点击翻拍</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">turn</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">	element.onmouseout = <span class="literal">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>同上两个方法一样，最后一句是把onmouseout事件移除，不然单击之后鼠标移开又会触发盖牌。   </p>
+<h5 id="把你的牌插入到html中"><a href="#把你的牌插入到html中" class="headerlink" title="把你的牌插入到html中"></a>把你的牌插入到html中</h5><p>这里我们需要先得到HTML中的id为poker的div元素,我用了全局变量来存放这个元素以便后面要用:   </p>
+<pre><code>var poker = document.getElementById(&apos;poker&apos;);   
+</code></pre><p>请把它放在chars数组和brands数组后。<br>回到之前创建牌的那，加入下面这句:   </p>
+<pre><code>poker.appendChild(img);  
+</code></pre><p>这样就把创建的牌插入到HTML元素中了，但是我们能不能改进一下呢？比如可以指定创建多少个，我们只需要一个参数和一个循环就可以搞定了。创建牌的函数最终样子就是这样了:   </p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//创建牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createBrand</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i =<span class="number">0</span>; i&lt; n;i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>);</div><div class="line">		<span class="keyword">var</span> num = generateMixed();</div><div class="line">		<span class="keyword">var</span> imgSrc = brands[num<span class="number">-1</span>];</div><div class="line">		img.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">		img.setAttribute(<span class="string">'alt'</span>,<span class="string">'扑克'</span>);</div><div class="line">		img.setAttribute(<span class="string">'index'</span>,imgSrc);</div><div class="line">		img.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">		img.setAttribute(<span class="string">'row'</span>,chars[num<span class="number">-1</span>]);</div><div class="line">		img.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flop(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		img.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		img.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			turn(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		poker.appendChild(img);</div><div class="line">	&#125;</div><div class="line">&#125;   </div><div class="line"><span class="comment">//开牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flop</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">&#125;</div><div class="line"><span class="comment">//盖牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flopBack</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">&#125;</div><div class="line"><span class="comment">//点击开拍</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">turn</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">	element.onmouseout = <span class="literal">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h3 id="在什么时候创建？"><a href="#在什么时候创建？" class="headerlink" title="在什么时候创建？"></a>在什么时候创建？</h3><p>在这之前的步骤都还没有执行，那么我们需要在什么时候添加进网页内容中呢？还记得最早在html代码中的那几个按钮和一个文本输入框吗？对，就是让用户输入一个数然后点击发牌你的牌才发出来。<br>那么我们应该先获得到输入框的值然后再创建：   </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置要生成牌的张数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getValue</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">var</span> value = <span class="built_in">document</span>.getElementById(<span class="string">'value'</span>);</div><div class="line">	createBrand(value.value);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这时候创建牌函数的触发条件就有了，那就是“发牌”按钮。如果没有这个触发，那就网页上永远都不会出现牌，因为你没有任何事件触发它。<br><strong>对了，我们好像还忘了点什么，我们不是有翻起全部牌和盖上全部牌吗？</strong><br>这个和之前翻牌和盖牌没有很大差距，唯一的差别就是你需要用一个循环来遍历所有的img。   </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//翻起全部牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">openAllCards</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> brandsList = poker.getElementsByTagName(<span class="string">'img'</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;brandsList.length;i++)</div><div class="line">	&#123;</div><div class="line">		brandsList[i].setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">		brandsList[i].setAttribute(<span class="string">'src'</span>,brandsList[i].getAttribute(<span class="string">'index'</span>));</div><div class="line">		brandsList[i].onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>盖牌也是一样:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//盖起全部牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">closeAllCards</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> brandsList = poker.getElementsByTagName(<span class="string">'img'</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;brandsList.length;i++)</div><div class="line">	&#123;</div><div class="line">		brandsList[i].setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">		brandsList[i].setAttribute(<span class="string">'src'</span>,back);</div><div class="line">		brandsList[i].onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>因为我们之前可能单击之后触发的函数把onmouseout事件移除了，所以在这我们需要重新添加进去。   </p>
+<h3 id="最后给你的按钮添加单击事件"><a href="#最后给你的按钮添加单击事件" class="headerlink" title="最后给你的按钮添加单击事件"></a>最后给你的按钮添加单击事件</h3><p>找到html中的文本输入框和三个按钮并加入onclick事件，最终效果如下:   </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">请输入要洗牌的个数.<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"getValue()"</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"openAllCards()"</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"closeAllCards()"</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="四、结束"><a href="#四、结束" class="headerlink" title="四、结束"></a>四、结束</h1><p><strong>“发牌游戏”就到这了。这次任务的核心点就在于各个函数之间的调用以及整体的设计，重点就是在于细节方面，比如更形象的“翻牌效果”</strong>   </p>
+<h3 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h3><pre><code class="HTML">
+<span class="meta">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>
+<span class="tag">&lt;<span class="name">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">title</span>&gt;</span>发牌游戏<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined">
+        .brand {
+            width: 105px;
+            height: 150px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 20px;
+            transition: all 0.8s;
+        }
+        .brandBack{
+            transform: rotateY(360deg);
+            transition:all 0.8s;
+        }
+    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+<span class="tag">&lt;<span class="name">body</span>&gt;</span>
+    请输入要洗牌的个数.<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"getValue()"</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"openAllCards()"</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"closeAllCards()"</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"poker"</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">
+        var chars = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+        //每一张牌的路径,brands下标对应A-K(13张)
+        var brands = ["img/14.jpg","img/15.jpg","img/16.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/21.jpg","img/35.jpg","img/49.jpg","img/11.jpg","img/12.jpg","img/13.jpg"];
+        //牌的背面
+        var back = "img/back.jpg";
+        var poker = document.getElementById('poker');
+
+        function generateMixed() {
+             var id = Math.ceil(Math.random()*13);
+             return id;
+        }
+        //创建牌
+        function createBrand(n) {
+            for(var i =0; i&lt; n;i++)
+            {
+                var img = document.createElement('img');
+                var num = generateMixed();
+                var imgSrc = brands[num-1];
+                img.setAttribute('src',back);
+                img.setAttribute('alt','扑克');
+                img.setAttribute('index',imgSrc);
+                img.setAttribute('class','brand');
+                img.setAttribute('row',chars[num-1]);
+                img.onmouseover = function(){
+                    flop(this);
+                }
+                img.onmouseout = function(){
+                    flopBack(this);
+                }
+                img.onclick = function(){
+                    turn(this);
+                }
+                poker.appendChild(img);
+            }
+        }
+        //设置要生成牌的张数
+        function getValue()
+        {
+            var value = document.getElementById('value');
+            createBrand(value.value);
+        }
+        //开牌
+        function flop(element) {
+            element.setAttribute('class','brand brandBack');
+            element.setAttribute('src',element.getAttribute('index'));
+        }
+        //盖牌
+        function flopBack(element) {
+            element.setAttribute('class','brand');
+            element.setAttribute('src',back);
+        }
+        //点击开牌
+        function turn(element) {
+            element.setAttribute('class','brand brandBack');
+            element.setAttribute('src',element.getAttribute('index'));
+            element.onmouseout = null;
+        }
+        //翻起全部牌
+        function openAllCards() {
+            var brandsList = poker.getElementsByTagName('img');
+            for(var i=0;i&lt;brandsList.length;i++)
+            {
+                brandsList[i].setAttribute('class','brand brandBack');
+                brandsList[i].setAttribute('src',brandsList[i].getAttribute('index'));
+                brandsList[i].onmouseout = function(){
+                    flopBack(this);
+                }
+            }
+        }
+        //盖起全部牌
+        function closeAllCards(){
+            var brandsList = poker.getElementsByTagName('img');
+            for(var i=0;i&lt;brandsList.length;i++)
+            {
+                brandsList[i].setAttribute('class','brand');
+                brandsList[i].setAttribute('src',back);
+                brandsList[i].onmouseout = function(){
+                    flopBack(this);
+                }
+            }
+        }
+    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">html</span>&gt;</span>
+</code></pre>
+<h4 id="最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。"><a href="#最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。" class="headerlink" title="最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。"></a>最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。</h4><p><strong>如果觉得这篇文章对您有帮助，请转载给更多需要的人(转载时请注明出处)。谢谢！</strong></p>
 
       
 
@@ -348,11 +428,7 @@ git config --global user.email &quot;邮箱@邮箱.com&quot;    #github邮箱
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
         		</li>
       		
 		</ul>
@@ -408,7 +484,7 @@ git config --global user.email &quot;邮箱@邮箱.com&quot;    #github邮箱
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -422,15 +498,11 @@ git config --global user.email &quot;邮箱@邮箱.com&quot;    #github邮箱
   
 <nav id="article-nav">
   
-    <a href="/2017/05/08/pokerGame/JS扑克牌小游戏-一/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS扑克牌小游戏(一)
-        
-      </div>
-    </a>
   
+    <a href="/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我是如何利用Github Pages搭建起我的博客，细数一路的坑</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -444,8 +516,8 @@ git config --global user.email &quot;邮箱@邮箱.com&quot;    #github邮箱
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://cczeng.github.io/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/", 
-    sourceId: "我是如何利用Github-Pages搭建起我的博客——细数一路的坑",
+    url: "https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/", 
+    sourceId: "pokerGame/JS扑克牌小游戏-一",
     productKey: "fd9aceff07134e4f9c230333725250f0",
     target: "cloud-tie-wrapper"
   };
