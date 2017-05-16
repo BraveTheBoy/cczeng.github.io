@@ -7,21 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cczeng.github.io">
-  <title>JS扑克牌小游戏(一) | 曾亮的博客 | 诗和远方</title>
+  <title>C#笔记——面向对象编程简介 | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
-<meta name="keywords" content="JS">
+  <meta name="description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
+<meta name="keywords" content="C#,笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS扑克牌小游戏(一)">
-<meta property="og:url" content="https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/index.html">
+<meta property="og:title" content="C#笔记——面向对象编程简介">
+<meta property="og:url" content="https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
-<meta property="og:image" content="https://cczeng.github.io/img/pokerGame/yanshi.gif">
-<meta property="og:updated_time" content="2017-05-09T09:19:51.828Z">
+<meta property="og:description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
+<meta property="og:updated_time" content="2017-05-16T03:36:27.430Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS扑克牌小游戏(一)">
-<meta name="twitter:description" content="一、前言今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：">
-<meta name="twitter:image" content="https://cczeng.github.io/img/pokerGame/yanshi.gif">
+<meta name="twitter:title" content="C#笔记——面向对象编程简介">
+<meta name="twitter:description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
   
@@ -162,228 +160,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-pokerGame/JS扑克牌小游戏-一" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C Sharp/C-笔记——面向对象编程简介" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JS扑克牌小游戏(一)
+      C#笔记——面向对象编程简介
     </h1>
   
 
         
-        <a href="/2017/05/08/pokerGame/JS扑克牌小游戏-一/" class="archive-article-date">
-  	<time datetime="2017-05-08T08:08:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-08</time>
+        <a href="/2017/05/16/C Sharp/C-笔记——面向对象编程简介/" class="archive-article-date">
+  	<time datetime="2017-05-16T02:55:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><h5 id="今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求："><a href="#今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：" class="headerlink" title="今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求："></a>今天上课的时候刚好老师布置了用js来做一个扑克牌的小游戏，起初老师只要求我们做一个简单的随机几张扑克牌做出翻牌效果。但是怎么能甘于做一个这么简单的呢，所以我在老师的要求之上给自己再加了一些要求：</h5><a id="more"></a>   
-<h2 id="第一阶段-老师的基本要求-："><a href="#第一阶段-老师的基本要求-：" class="headerlink" title="第一阶段(老师的基本要求)："></a>第一阶段(老师的基本要求)：</h2><ol>
-<li>随机出3张牌</li>
-<li>实现鼠标经过开牌，鼠标离开盖牌   </li>
-</ol>
-<h2 id="第二阶段-自我要求——进阶"><a href="#第二阶段-自我要求——进阶" class="headerlink" title="第二阶段(自我要求——进阶):"></a>第二阶段(自我要求——进阶):</h2><ol>
-<li>实现用户指定n张牌</li>
-<li>在鼠标经过开牌、鼠标离开盖牌的基础上添加单击开牌(鼠标离开不再盖牌)</li>
-<li>在单张牌开牌盖牌的基础上添加一键全部开牌、盖牌   </li>
-</ol>
-<p>有了要求以后就能进行下一步的展开了这里先放上效果&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Subpage/pokerGame/index.html">点击这里查看效果</a>   </p>
-<p><img src="/img/pokerGame/yanshi.gif" alt="演示效果"></p>
-<h1 id="二、如何设计？"><a href="#二、如何设计？" class="headerlink" title="二、如何设计？"></a>二、如何设计？</h1><p>这步其实很多人都会忽略，觉得我已经有要求了，可以不用设计直接上手撸代码了。但其实等你撸代码的时候你就会发现越来越多的问题，比如写着写着发现要添加一个功能很难，原因就在于你&nbsp;&nbsp;&nbsp;<strong>没有在撸代码之前稍微花一点时间去思考这个程序大致的框架要怎样来搭建</strong>.(经验多的大牛花在这上面的时间相对更少)   </p>
-<h3 id="1-nbsp-nbsp-怎样展示"><a href="#1-nbsp-nbsp-怎样展示" class="headerlink" title="1)&nbsp;&nbsp;怎样展示"></a>1)&nbsp;&nbsp;怎样展示</h3><ol>
-<li>考虑到之前要求用户输入发牌的数量，我们在设计的时候就应该使用js的动态创建元素，而不是直接在HTML里直接写入固定元素个数。</li>
-<li>1个输入框、1个提交按钮、1个翻全部牌按钮、1个盖上全部牌按钮</li>
-<li>把创建牌/添加牌写成一个函数以便后期扩展   </li>
-</ol>
-<h3 id="2-nbsp-nbsp-细节"><a href="#2-nbsp-nbsp-细节" class="headerlink" title="2)&nbsp;&nbsp;细节"></a>2)&nbsp;&nbsp;细节</h3><ol>
-<li>既然涉及到开牌和盖牌,那就需要改变img标签的src属性，在这怎么保存当前这张牌真正的牌呢？我用了index属性来保存以便取出，这个方法不是最完美的。</li>
-<li>在开牌和盖牌的时候是否能更形象呢？比如加入css3动画的Y轴翻转。   </li>
-</ol>
-<p><strong>有了这些就可以进行下一步展开了</strong></p>
-<h1 id="三、编写代码"><a href="#三、编写代码" class="headerlink" title="三、编写代码"></a>三、编写代码</h1><h2 id="1-nbsp-nbsp-网页布局"><a href="#1-nbsp-nbsp-网页布局" class="headerlink" title="1)&nbsp;&nbsp;网页布局"></a>1)&nbsp;&nbsp;网页布局</h2><p>在html文件body里加入:   </p>
-<pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">请输入要洗牌的个数.</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"poker"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-</code></pre><p>这里的div是用来存放扑克牌的。至于扑克牌素材请自行百度下载。   </p>
-<h2 id="3-nbsp-nbsp-CSS代码"><a href="#3-nbsp-nbsp-CSS代码" class="headerlink" title="3)&nbsp;&nbsp;CSS代码"></a>3)&nbsp;&nbsp;CSS代码</h2><p>这里考虑到是多张图，我们就使用类的方法来添加样式。<br>其中固定了每一张图的长宽，设置了浮动和外边距，还设置了动画时间(翻牌效果)。<br>当把.brandBack类添加给图片的时候就能看到图片翻转的效果了。<br>    <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">	.brand &#123;</div><div class="line">		width: 105px;</div><div class="line">		height: 150px;</div><div class="line">		float: left;</div><div class="line">		margin-right: 10px;</div><div class="line">		margin-top: 20px;</div><div class="line">		transition: all 0.8s;</div><div class="line">	&#125;</div><div class="line">	.brandBack&#123;</div><div class="line">		transform: rotateY(360deg);</div><div class="line">		transition:all 0.8s;</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
-<h2 id="3-nbsp-nbsp-JavaScript代码"><a href="#3-nbsp-nbsp-JavaScript代码" class="headerlink" title="3)&nbsp;&nbsp;JavaScript代码"></a>3)&nbsp;&nbsp;JavaScript代码</h2><p><strong>首先我们有大量的图片,这些图片的路径我们用一个数组来存储(考虑过用对象后来觉得太麻烦)，我们还要用一个数组来存放每一张图片对应的牌面值</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//存放牌面值的数组  </span></div><div class="line"><span class="keyword">var</span> chars = [<span class="string">'A'</span>,<span class="string">'2'</span>,<span class="string">'3'</span>,<span class="string">'4'</span>,<span class="string">'5'</span>,<span class="string">'6'</span>,<span class="string">'7'</span>,<span class="string">'8'</span>,<span class="string">'9'</span>,<span class="string">'10'</span>,<span class="string">'J'</span>,<span class="string">'Q'</span>,<span class="string">'K'</span>];</div><div class="line"><span class="comment">//每一张牌的路径,brands下标对应A-K(13张)</span></div><div class="line"><span class="keyword">var</span> brands = [<span class="string">"img/14.jpg"</span>,<span class="string">"img/15.jpg"</span>,<span class="string">"img/16.jpg"</span>,<span class="string">"img/4.jpg"</span>,<span class="string">"img/5.jpg"</span>,<span class="string">"img/6.jpg"</span>,<span class="string">"img/7.jpg"</span>,<span class="string">"img/21.jpg"</span>,<span class="string">"img/35.jpg"</span>,<span class="string">"img/49.jpg"</span>,<span class="string">"img/11.jpg"</span>,<span class="string">"img/12.jpg"</span>,<span class="string">"img/13.jpg"</span>];</div></pre></td></tr></table></figure></p>
-<p>上面均是全局数组，不需要放在任何function函数中   </p>
-<p><strong>有了牌面值、每一张牌的路径,那么我们是不是还缺一个牌的背面呢？</strong>   </p>
-<pre><code>//牌的背面
-var back = &quot;img/back.jpg&quot;;
-</code></pre><p><strong><em>注意：</em></strong>所有牌的路径以你自己的路径为准，这里可能和你们的不一样。   </p>
-<h5 id="牌的随机面值"><a href="#牌的随机面值" class="headerlink" title="牌的随机面值"></a>牌的随机面值</h5><p>这里我们需要用到js的随机函数Math.random()来创建一个随机数，创建一个1-13的随机数来对应A-K。   </p>
-<pre><code>Math.random()*13;   
-</code></pre><p>但是你会发现这样随机出来的数是小数，那怎么办？js其实还提供了一个方法：</p>
-<blockquote>
-<p>ceil() 方法可对一个数进行上舍入。——来自<a href="http://www.w3school.com.cn/jsref/jsref_ceil.asp" target="_blank" rel="external">W3C网</a><br>那么我们为了方便就把这个生成随机数打包成一个函数:     </p>
+        <h4 id="摘自C-入门经典（第七版）——第八章"><a href="#摘自C-入门经典（第七版）——第八章" class="headerlink" title="摘自C#入门经典（第七版）——第八章"></a>摘自C#入门经典（第七版）——第八章</h4><h3 id="对象和类"><a href="#对象和类" class="headerlink" title="对象和类"></a>对象和类</h3><blockquote>
+<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>是<strong><a href="http://baike.baidu.com/link?url=Sg7eDc1ZJE20wqd0eNks5ijPt_TjCk0qvp1-ag7t-KBhhWThS3YBCVgk36RJsN8cZyHMX-hWqzwo0bDnRTfky_" target="_blank" rel="external">OOP</a></strong> <em>应用程序的组成部件。<strong><a href="http://baike.baidu.com/link?url=M3K5MeRHyEjE5N34-KljAW7UEA_Nkgn5XibqkpntmzqUyqVBYaV9cJajB63jUwJpdIkQsTffS86Bve4urJnaMK" target="_blank" rel="external">类</a></strong> </em>是用于实例化对象的类型定义。<em> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>可以包含<strong><a href="http://baike.baidu.com/link?url=a7My4fQm5KgL3B09I2DM9T4A7QEu8G2e9pWk3VECCCgUPmNBD5z897TcnKaetZs6xhwZ6rejSDL_arbiMZv_5Z0AdmRCSlvVicA1AfiYYva" target="_blank" rel="external">数据</a></strong>，提供其他代码可以使用的操作。<strong><a href="http://baike.baidu.com/link?url=a7My4fQm5KgL3B09I2DM9T4A7QEu8G2e9pWk3VECCCgUPmNBD5z897TcnKaetZs6xhwZ6rejSDL_arbiMZv_5Z0AdmRCSlvVicA1AfiYYva" target="_blank" rel="external">数据</a></strong> 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。<br> <strong><a href="http://baike.baidu.com/link?url=tgsp2RneYACBdmAT45FT3HXb2sivBhsJ9p2J2b4TStje_qBQw9DiK0-aobsCPunlniLsvXe_l5yKyYri_XtFKukTr2YPZighE8mPRRjtUwm" target="_blank" rel="external">属性</a></strong>和<strong>方法</strong>称为类的成员。<strong><a href="http://baike.baidu.com/link?url=tgsp2RneYACBdmAT45FT3HXb2sivBhsJ9p2J2b4TStje_qBQw9DiK0-aobsCPunlniLsvXe_l5yKyYri_XtFKukTr2YPZighE8mPRRjtUwm" target="_blank" rel="external">属性</a></strong>可以进行读取访问、写入访问或读写访问。<strong><a href="http://baike.baidu.com/link?url=M3K5MeRHyEjE5N34-KljAW7UEA_Nkgn5XibqkpntmzqUyqVBYaV9cJajB63jUwJpdIkQsTffS86Bve4urJnaMK" target="_blank" rel="external">类</a></strong>成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西都是<em>*<a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></em></em>    </p>
 </blockquote>
-<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//生成一个1-13的随机数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateMixed</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> id = <span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*<span class="number">13</span>);</div><div class="line">	<span class="keyword">return</span> id;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><p><em>以上函数就是生成一个随机数的函数了，后面我们只需要调用它就可以返回一个1-13的随机数给我们了。</em></p>
-<h5 id="创建一张“牌”"><a href="#创建一张“牌”" class="headerlink" title="创建一张“牌”"></a>创建一张“牌”</h5><p>我们有了之前的牌面值和路径之后是不是还缺少一个真正的牌在HTML DOM里面呢？那么我们就利用JS的动态创建来把我们的扑克牌添加进去吧！   </p>
-<pre><code>var img = document.createElement(&apos;img&apos;);   
-</code></pre><p>上面这条语句就在HTML文档树中添加了一个img标签元素了，也就是我们所说的牌，但是这张牌还没有在HTML中出现，他只是DOM世界的一个孤儿，我们稍后再把它插入HTML文档中。   </p>
-<pre><code>var num = generateMixed();
-var imgSrc = brands[num-1];   
-</code></pre><p>这两句是干嘛的呢？num变量是用来保存随机出来的数值，imgSrc是把随机出来的数值对应到brands数组(存放着图片路径)中的路径，这里num-1是因为数组下标是从0开始的。   </p>
-<p>那么有了img标签和面值、路径后我们是不是应该给img标签添加路径了呢？<br><strong>这里我们还需要考虑一个问题，所有的牌出现的时候都应该是盖着的，那我们要怎么实现保存每一张牌的正面呢？</strong><br>这里我想到了两个方法：   </p>
-<ol>
-<li>使用数组保存每一张牌的正面图片路径   </li>
-<li>在img标签里加入一个index属性用来存放当前牌的正面路径   </li>
-</ol>
-<p>刚开始你可能会有疑惑，为什么要这样做？<strong>因为你翻牌的效果实际上就是改变了img标签的src属性</strong>   </p>
-<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">img.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">img.setAttribute(<span class="string">'alt'</span>,<span class="string">'扑克'</span>);</div><div class="line">img.setAttribute(<span class="string">'index'</span>,imgSrc);</div><div class="line">img.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">img.setAttribute(<span class="string">'row'</span>,chars[num<span class="number">-1</span>]);</div></pre></td></tr></table></figure>
-</code></pre><p>每一行代码作用:   </p>
-<ol>
-<li>由于发的牌第一次出现应该是背面,所以我们先把背面牌路径给src</li>
-<li>当用户无法查看图像时（可能由于网速太慢、错误的 src 属性、或者用户使用的是屏幕阅读器），alt 属性为图像提供了替代的文本。<a href="http://www.w3school.com.cn/html5/att_img_alt.asp" target="_blank" rel="external">引自W3C</a>   </li>
-<li>把当前牌的真正路径放入index属性中   </li>
-<li>添加class类</li>
-<li>添加row属性用来存放牌面值   </li>
-</ol>
-<p><em>在第3点、第5点其实不应该直接把面值和路径直接放在img标签属性中。但为了方便我选择把它放在了img标签中。在以后的项目中尽量不要这么做，</em>   </p>
-<h5 id="为你的牌添加事件"><a href="#为你的牌添加事件" class="headerlink" title="为你的牌添加事件"></a>为你的牌添加事件</h5><p>既然我们要做鼠标进过的时候开牌离开盖牌，那么就要用到onmouseover、onmouseout事件，<strong>(自我要求)</strong>这个时候我们得多想想，难道我只能鼠标移在一张牌的时候看牌吗？如果我要看多张牌呢？所以我添加了一个onclick事件，在点击这张牌之后一直是开牌状态<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">img.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	flop(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">img.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	flopBack(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">img.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	turn(<span class="keyword">this</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>分别设置了三个事件，每个事件触发时都会执行一个函数。分别是:1、开牌2、盖牌3、点击一直开牌<br><strong>开牌函数</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//翻牌事件</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flop</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>由于我们是把当前元素(this)传递进来了，我们只需要修改src属性就可以把正面牌展示出来了，但是直接修改就没有翻牌动画了，所以在修改之前我们需要添加brandBack类，实际上就是一个转牌动画。   </p>
-<p><strong>盖牌函数</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//盖牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flopBack</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>和开牌一样，我们只需要把brandBack类去掉就行了，再把图片背面替换过来。   </p>
-<p><strong>点击翻牌</strong><br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//点击翻拍</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">turn</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">	element.onmouseout = <span class="literal">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>同上两个方法一样，最后一句是把onmouseout事件移除，不然单击之后鼠标移开又会触发盖牌。   </p>
-<h5 id="把你的牌插入到html中"><a href="#把你的牌插入到html中" class="headerlink" title="把你的牌插入到html中"></a>把你的牌插入到html中</h5><p>这里我们需要先得到HTML中的id为poker的div元素,我用了全局变量来存放这个元素以便后面要用:   </p>
-<pre><code>var poker = document.getElementById(&apos;poker&apos;);   
-</code></pre><p>请把它放在chars数组和brands数组后。<br>回到之前创建牌的那，加入下面这句:   </p>
-<pre><code>poker.appendChild(img);  
-</code></pre><p>这样就把创建的牌插入到HTML元素中了，但是我们能不能改进一下呢？比如可以指定创建多少个，我们只需要一个参数和一个循环就可以搞定了。创建牌的函数最终样子就是这样了:   </p>
-<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//创建牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createBrand</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i =<span class="number">0</span>; i&lt; n;i++)</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>);</div><div class="line">		<span class="keyword">var</span> num = generateMixed();</div><div class="line">		<span class="keyword">var</span> imgSrc = brands[num<span class="number">-1</span>];</div><div class="line">		img.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">		img.setAttribute(<span class="string">'alt'</span>,<span class="string">'扑克'</span>);</div><div class="line">		img.setAttribute(<span class="string">'index'</span>,imgSrc);</div><div class="line">		img.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">		img.setAttribute(<span class="string">'row'</span>,chars[num<span class="number">-1</span>]);</div><div class="line">		img.onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flop(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		img.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		img.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			turn(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">		poker.appendChild(img);</div><div class="line">	&#125;</div><div class="line">&#125;   </div><div class="line"><span class="comment">//开牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flop</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">&#125;</div><div class="line"><span class="comment">//盖牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flopBack</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,back);</div><div class="line">&#125;</div><div class="line"><span class="comment">//点击开拍</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">turn</span>(<span class="params">element</span>) </span>&#123;</div><div class="line">	element.setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">	element.setAttribute(<span class="string">'src'</span>,element.getAttribute(<span class="string">'index'</span>));</div><div class="line">	element.onmouseout = <span class="literal">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre><h3 id="在什么时候创建？"><a href="#在什么时候创建？" class="headerlink" title="在什么时候创建？"></a>在什么时候创建？</h3><p>在这之前的步骤都还没有执行，那么我们需要在什么时候添加进网页内容中呢？还记得最早在html代码中的那几个按钮和一个文本输入框吗？对，就是让用户输入一个数然后点击发牌你的牌才发出来。<br>那么我们应该先获得到输入框的值然后再创建：   </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//设置要生成牌的张数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getValue</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">var</span> value = <span class="built_in">document</span>.getElementById(<span class="string">'value'</span>);</div><div class="line">	createBrand(value.value);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>这时候创建牌函数的触发条件就有了，那就是“发牌”按钮。如果没有这个触发，那就网页上永远都不会出现牌，因为你没有任何事件触发它。<br><strong>对了，我们好像还忘了点什么，我们不是有翻起全部牌和盖上全部牌吗？</strong><br>这个和之前翻牌和盖牌没有很大差距，唯一的差别就是你需要用一个循环来遍历所有的img。   </p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//翻起全部牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">openAllCards</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> brandsList = poker.getElementsByTagName(<span class="string">'img'</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;brandsList.length;i++)</div><div class="line">	&#123;</div><div class="line">		brandsList[i].setAttribute(<span class="string">'class'</span>,<span class="string">'brand brandBack'</span>);</div><div class="line">		brandsList[i].setAttribute(<span class="string">'src'</span>,brandsList[i].getAttribute(<span class="string">'index'</span>));</div><div class="line">		brandsList[i].onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>盖牌也是一样:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//盖起全部牌</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">closeAllCards</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> brandsList = poker.getElementsByTagName(<span class="string">'img'</span>);</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;brandsList.length;i++)</div><div class="line">	&#123;</div><div class="line">		brandsList[i].setAttribute(<span class="string">'class'</span>,<span class="string">'brand'</span>);</div><div class="line">		brandsList[i].setAttribute(<span class="string">'src'</span>,back);</div><div class="line">		brandsList[i].onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			flopBack(<span class="keyword">this</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>因为我们之前可能单击之后触发的函数把onmouseout事件移除了，所以在这我们需要重新添加进去。   </p>
-<h3 id="最后给你的按钮添加单击事件"><a href="#最后给你的按钮添加单击事件" class="headerlink" title="最后给你的按钮添加单击事件"></a>最后给你的按钮添加单击事件</h3><p>找到html中的文本输入框和三个按钮并加入onclick事件，最终效果如下:   </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">请输入要洗牌的个数.<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"getValue()"</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"openAllCards()"</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"closeAllCards()"</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
-<h1 id="四、结束"><a href="#四、结束" class="headerlink" title="四、结束"></a>四、结束</h1><p><strong>“发牌游戏”就到这了。这次任务的核心点就在于各个函数之间的调用以及整体的设计，重点就是在于细节方面，比如更形象的“翻牌效果”</strong>   </p>
-<h3 id="最终代码"><a href="#最终代码" class="headerlink" title="最终代码"></a>最终代码</h3><pre><code class="html"><span class="meta">&lt;!DOCTYPE html&gt;</span>
-<span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>
-<span class="tag">&lt;<span class="name">head</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">title</span>&gt;</span>发牌游戏<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined">
-        .brand {
-            width: 105px;
-            height: 150px;
-            float: left;
-            margin-right: 10px;
-            margin-top: 20px;
-            transition: all 0.8s;
-        }
-        .brandBack{
-            transform: rotateY(360deg);
-            transition:all 0.8s;
-        }
-    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">head</span>&gt;</span>
-<span class="tag">&lt;<span class="name">body</span>&gt;</span>
-    请输入要洗牌的个数.<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"value"</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"getValue()"</span>&gt;</span>发牌<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"openAllCards()"</span>&gt;</span>翻起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"closeAllCards()"</span>&gt;</span>盖起全部<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
-    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"poker"</span>&gt;</span>
-
-    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
-
-
-    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">
-        var chars = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
-        //每一张牌的路径,brands下标对应A-K(13张)
-        var brands = ["img/14.jpg","img/15.jpg","img/16.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/21.jpg","img/35.jpg","img/49.jpg","img/11.jpg","img/12.jpg","img/13.jpg"];
-        //牌的背面
-        var back = "img/back.jpg";
-        var poker = document.getElementById('poker');
-
-        function generateMixed() {
-             var id = Math.ceil(Math.random()*13);
-             return id;
-        }
-        //创建牌
-        function createBrand(n) {
-            for(var i =0; i&lt; n;i++)
-            {
-                var img = document.createElement('img');
-                var num = generateMixed();
-                var imgSrc = brands[num-1];
-                img.setAttribute('src',back);
-                img.setAttribute('alt','扑克');
-                img.setAttribute('index',imgSrc);
-                img.setAttribute('class','brand');
-                img.setAttribute('row',chars[num-1]);
-                img.onmouseover = function(){
-                    flop(this);
-                }
-                img.onmouseout = function(){
-                    flopBack(this);
-                }
-                img.onclick = function(){
-                    turn(this);
-                }
-                poker.appendChild(img);
-            }
-        }
-        //设置要生成牌的张数
-        function getValue()
-        {
-            var value = document.getElementById('value');
-            createBrand(value.value);
-        }
-        //开牌
-        function flop(element) {
-            element.setAttribute('class','brand brandBack');
-            element.setAttribute('src',element.getAttribute('index'));
-        }
-        //盖牌
-        function flopBack(element) {
-            element.setAttribute('class','brand');
-            element.setAttribute('src',back);
-        }
-        //点击开牌
-        function turn(element) {
-            element.setAttribute('class','brand brandBack');
-            element.setAttribute('src',element.getAttribute('index'));
-            element.onmouseout = null;
-        }
-        //翻起全部牌
-        function openAllCards() {
-            var brandsList = poker.getElementsByTagName('img');
-            for(var i=0;i&lt;brandsList.length;i++)
-            {
-                brandsList[i].setAttribute('class','brand brandBack');
-                brandsList[i].setAttribute('src',brandsList[i].getAttribute('index'));
-                brandsList[i].onmouseout = function(){
-                    flopBack(this);
-                }
-            }
-        }
-        //盖起全部牌
-        function closeAllCards(){
-            var brandsList = poker.getElementsByTagName('img');
-            for(var i=0;i&lt;brandsList.length;i++)
-            {
-                brandsList[i].setAttribute('class','brand');
-                brandsList[i].setAttribute('src',back);
-                brandsList[i].onmouseout = function(){
-                    flopBack(this);
-                }
-            }
-        }
-    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">body</span>&gt;</span>
-<span class="tag">&lt;/<span class="name">html</span>&gt;</span>
-</code></pre>
-<h4 id="最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。"><a href="#最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。" class="headerlink" title="最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。"></a>最后感谢您的阅读，后面可能会在这个的基础上改良，例如实现发牌动画效果。</h4><p><strong>如果觉得这篇文章对您有帮助，请转载给更多需要的人(转载时请注明出处)。谢谢！</strong></p>
+<a id="more"></a>
+<h3 id="对象的生命周期"><a href="#对象的生命周期" class="headerlink" title="对象的生命周期"></a>对象的生命周期</h3><blockquote>
+<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>通过调用它的一个<strong><a href="http://baike.baidu.com/link?url=usuz1oSaBbDb6LL_58xxv4wmLuYfUhzbwc_aMJStc9PxqPpwJ2FCTu52NtL_3Uehnnua7M8n0uNbYb-A9ZRB7M8wvq-Jm3T7kfqCL7oPT7m76Xlrwr983lAlKxH3ng8u" target="_blank" rel="external">构造函数</a></strong>来实例化。不再需要<strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>时，就执行其<strong><a href="http://baike.baidu.com/link?url=IYGZxeqxX-ym3RRR5E55F8H9cvwLYe1GguhZ5aVG5b-Z8Y-m69WSapulTF7mA3LWr5LbIj4jUoZ08UPgUv6eB5LY7_IvDVO8cmawG0TFcBS_FoLEY7FxUZIwUmtma-BT" target="_blank" rel="external">构析函数</a></strong>，以删除它。<br> <strong><em>重点：</em></strong>要清理对象，常常需要手工删除它。</p>
+</blockquote>
+<h3 id="静态成员和实例成员"><a href="#静态成员和实例成员" class="headerlink" title="静态成员和实例成员"></a>静态成员和实例成员</h3><blockquote>
+<p>实例成员只能在类的对象实例上使用，静态成员只能直接通过类定义使用，它不与实例关联。   </p>
+</blockquote>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><blockquote>
+<p><strong>接口</strong> <em>是可以在类上实现的公共属性和方法的集合</em>。可将 实现了一个接口的类<em>的<em>*<a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></em></em>赋值给对应实例类型的变量。之后通过改变量，可以使用该接口定义的成员。</p>
+</blockquote>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><blockquote>
+<p><strong>继承</strong> <em>是一个类定义派生于另一个类定义的机制。</em>  <strong>类</strong>从其<strong>父类</strong>中继承成员，每个<strong>类</strong>都只能有一个<strong>父类</strong>。<strong>子类</strong>不能访问<strong>父类</strong>的私有成员，但可以定义受保护的成员，<strong><em>受保护的成员只能在该类和派生于该类的子类中使用</em></strong> 。<strong>子类</strong>可以重写<strong>父类</strong>中的虚拟成员。所有的类都有一个以<strong>System.Object</strong>结尾的继承链，在C#中，<strong>System.Object</strong>有一个别名<strong>object</strong>   </p>
+</blockquote>
+<h3 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h3><blockquote>
+<p>从一个派生类实例化的所有对象都可以看成其父类的实例。   </p>
+</blockquote>
+<h3 id="对象关系和特性"><a href="#对象关系和特性" class="headerlink" title="对象关系和特性"></a>对象关系和特性</h3><blockquote>
+<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>可以包含其他对象，也可以表示其他对象的集合。  <strong><em>要在表达式中处理对象，常常要通过运算符重载，定义运算符如何处理对象。</em></strong> 对象可以提供事件，事件因某种内部处理而被触发，客户端代码通过提供事件处理程序来响应事件</p>
+</blockquote>
 
       
 
@@ -428,7 +246,11 @@ var imgSrc = brands[num-1];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">C#</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
@@ -484,7 +306,7 @@ var imgSrc = brands[num-1];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -498,18 +320,9 @@ var imgSrc = brands[num-1];
   
 <nav id="article-nav">
   
-    <a href="/2017/05/12/TelephoneBook/C语言之电话溥-一/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          C语言之电话溥(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/05/03/我是如何利用Github-Pages搭建起我的博客——细数一路的坑/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我是如何利用Github Pages搭建起我的博客，细数一路的坑</div>
+    <a href="/2017/05/12/C/TelephoneBook/C语言之电话溥-一/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C语言之电话溥(一)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -525,8 +338,8 @@ var imgSrc = brands[num-1];
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://cczeng.github.io/2017/05/08/pokerGame/JS扑克牌小游戏-一/", 
-    sourceId: "pokerGame/JS扑克牌小游戏-一",
+    url: "https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/", 
+    sourceId: "C Sharp/C-笔记——面向对象编程简介",
     productKey: "fd9aceff07134e4f9c230333725250f0",
     target: "cloud-tie-wrapper"
   };
@@ -652,7 +465,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JS</a>
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -660,7 +477,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+                <a href="javascript:void(0)" class="js-tag color3">JS</a>
               </li>
             
             <div class="clearfix"></div>
