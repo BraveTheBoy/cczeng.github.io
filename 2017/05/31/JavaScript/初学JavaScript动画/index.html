@@ -7,18 +7,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cczeng.github.io">
-  <title>Archives | 曾亮的博客 | 诗和远方</title>
+  <title>初学JavaScript动画 | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
-<meta name="keywords" content="前端,js,C,C#,程序猿,曾亮,博客,cczeng,码农,曾亮的博客,诗和远方">
-<meta property="og:type" content="website">
-<meta property="og:title" content="曾亮的博客 | 诗和远方">
-<meta property="og:url" content="https://cczeng.github.io/archives/index.html">
+  <meta name="description" content="以前学js的时候由于没有编程基础，导致学到动画那一块就停止了。现在回过头去重新学习了关于JavaScript制作动画效果以及使用纯CSS来打造动画效果。懂了这些最基本的原理后，就可以根据这个写出更复杂、更炫酷的动画。">
+<meta name="keywords" content="JS,CSS3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初学JavaScript动画">
+<meta property="og:url" content="https://cczeng.github.io/2017/05/31/JavaScript/初学JavaScript动画/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
+<meta property="og:description" content="以前学js的时候由于没有编程基础，导致学到动画那一块就停止了。现在回过头去重新学习了关于JavaScript制作动画效果以及使用纯CSS来打造动画效果。懂了这些最基本的原理后，就可以根据这个写出更复杂、更炫酷的动画。">
+<meta property="og:image" content="https://cczeng.github.io/img/JavaScript/css_animation.gif">
+<meta property="og:image" content="https://cczeng.github.io/img/JavaScript/@keyframes.png">
+<meta property="og:image" content="https://cczeng.github.io/img/JavaScript/css_animation_1.gif">
+<meta property="og:image" content="https://cczeng.github.io/img/JavaScript/move.PNG">
+<meta property="og:updated_time" content="2017-06-02T09:25:34.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="曾亮的博客 | 诗和远方">
-<meta name="twitter:description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
+<meta name="twitter:title" content="初学JavaScript动画">
+<meta name="twitter:description" content="以前学js的时候由于没有编程基础，导致学到动画那一块就停止了。现在回过头去重新学习了关于JavaScript制作动画效果以及使用纯CSS来打造动画效果。懂了这些最基本的原理后，就可以根据这个写出更复杂、更炫酷的动画。">
+<meta name="twitter:image" content="https://cczeng.github.io/img/JavaScript/css_animation.gif">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
   
@@ -159,36 +165,138 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JavaScript/初学JavaScript动画" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/31/JavaScript/初学JavaScript动画/" class="archive-article-date">
-  	<time datetime="2017-05-31T07:47:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/31/JavaScript/初学JavaScript动画/">初学JavaScript动画</a>
+    <h1 class="article-title" itemprop="name">
+      初学JavaScript动画
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/05/31/JavaScript/初学JavaScript动画/" class="archive-article-date">
+  	<time datetime="2017-05-31T07:47:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前学js的时候由于没有编程基础，导致学到动画那一块就停止了。现在回过头去重新学习了关于JavaScript制作动画效果以及使用纯CSS来打造动画效果。懂了这些最基本的原理后，就可以根据这个写出更复杂、更炫酷的动画。</p>
+<a id="more"></a>
+<h1 id="1、纯CSS实现动画"><a href="#1、纯CSS实现动画" class="headerlink" title="1、纯CSS实现动画"></a>1、纯CSS实现动画</h1><p>在用JavaScript做动画效果前，我们先学习一下用CSS3来实现动画效果，在某些场景下，用CSS3就可以满足。   </p>
+<p>话不多说，先上 <strong><a href="/Subpage/pokerGame/css_animation.html">DEMO</a></strong>   <strong>请使用chrome等现代浏览器</strong>   </p>
+<p>下面是gif效果图<br><img src="/img/JavaScript/css_animation.gif" alt="纯CSS实现动画">   </p>
+<p><strong>这里的效果实际上完全依赖CSS3的：@keyframes 规则</strong>   </p>
+<blockquote>
+<p><strong>定义和用法</strong><br>通过 @keyframes 规则，您能够创建动画。<br>创建动画的原理是，将一套 CSS 样式逐渐变化为另一套样式。<br>在动画过程中，您能够多次改变这套 CSS 样式。<br>以百分比来规定改变发生的时间，或者通过关键词 “from” 和 “to”，等价于 0% 和 100%。<br>0% 是动画的开始时间，100% 动画的结束时间。<br>为了获得最佳的浏览器支持，您应该始终定义 0% 和 100% 选择器。<br>注释：<strong>请使用动画属性来控制动画的外观，同时将动画与选择器绑定。</strong>   </p>
+</blockquote>
+<p><strong>语法</strong>:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@keyframes animationname &#123;keyframes-selector &#123;css-styles;&#125;&#125;</div></pre></td></tr></table></figure>
+<p><img src="/img/JavaScript/@keyframes.png" alt="纯CSS实现动画">   </p>
+<p>有了 @keyframes 规则后需要在选择器中绑定 @keyframes 规则   </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-animation-name:myfirst;   //这里的myfirst就是规则名</div></pre></td></tr></table></figure>
+<p>接下来就开始制作动画效果：   </p>
+<p>首先我们需要在网页中插入一个元素，这个元素就是我们要展示动画的元素。这里我使用了一个100px的正方形，背景为红色以便于展示。   </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">html,body&#123;</div><div class="line">	width: 100%;</div><div class="line">	height: 100%;</div><div class="line">	overflow: hidden;</div><div class="line">&#125;</div><div class="line">.move &#123;</div><div class="line">	width: 100px;</div><div class="line">	height: 100px;</div><div class="line">	background: red;</div><div class="line">&#125;</div><div class="line">//以下为body中内存</div><div class="line">&lt;div class="move"&gt;&lt;/div&gt;   //html中插入</div></pre></td></tr></table></figure>
+<p>有了这个div之后我们就可以编写@keyframes规则了:     </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">keyframes</span> myfirst &#123;</div><div class="line">	0% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(1500px,0,0);</div><div class="line">	&#125;</div><div class="line">	40% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(25px,0,0);</div><div class="line">	&#125;</div><div class="line">	52% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(50px,0,0);</div><div class="line">	&#125;</div><div class="line">	65% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(25px,0,0);</div><div class="line">	&#125;</div><div class="line">	70% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(25px,0,0);</div><div class="line">	&#125;</div><div class="line">	100% &#123;</div><div class="line">		<span class="attribute">transform</span>: <span class="built_in">translate3d</span>(1500px,0,0);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>说明：<br>1. myfirst 为你的规则名，用于选择器绑定<br>2. 0%~100%为动画时间，from（与 0% 相同）to（与 100% 相同）<br>3. 在每一个动画的过程中可以改变css样式   </p>
+<p>这里还用到了CSS3的transform的 <strong><a href="http://www.w3school.com.cn/cssref/pr_transform.asp" target="_blank" rel="external">translate3d</a></strong> 属性  <strong>而不是直接修改left值。</strong>   </p>
+<p>这里我们从最开始的时候先移动到右侧外边，然后在40%的时候移动回来，52%的时候实现一个回弹的动画之后再65%的时候回去，这样就实现了回弹效果，之后就停顿一会再回最右边。     </p>
+<p><em>这里放一张慢图来仔细观察。   </em></p>
+<p><img src="/img/JavaScript/css_animation_1.gif" alt="纯CSS实现动画"> </p>
+<p>编写好了@keyframes 规则之后就需要在选择器里绑定：   </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.move</span> &#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</div><div class="line">	<span class="attribute">background</span>: red;</div><div class="line">	<span class="attribute">-webkit-animation-name</span>:myfirst;   <span class="comment">/*要绑定的规则名 */</span></div><div class="line">	<span class="attribute">-webkit-animation-duration</span>:<span class="number">2s</span>;    <span class="comment">/*动画完成一个周期的时间*/</span></div><div class="line">	<span class="attribute">-webkit-animation-timing-function</span>:ease-out;  <span class="comment">/*动画规定的速度曲线*/</span></div><div class="line">	<span class="attribute">-webkit-animation-delay</span>:<span class="number">0s</span>;      <span class="comment">/* 动画何时开始*/</span></div><div class="line">	<span class="attribute">-webkit-animation-iteration-count</span>:<span class="number">5</span>;  <span class="comment">/*动画被播放次数*/</span></div><div class="line">	<span class="attribute">-webkit-animation-direction</span>:normal;  <span class="comment">/*规定动画是否在下一周期逆向地播放。默认是 "normal"。*/</span></div><div class="line">	<span class="attribute">-webkit-animation-fill-mode</span>:backwards; <span class="comment">/*规定对象动画时间之外的状态。*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>设置好了之后就可以看到效果了，如果想更详细的了解animation属性请点击<a href="http://www.w3school.com.cn/cssref/pr_animation.asp" target="_blank" rel="external">CSS3 animation 属性</a>    </p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>就是利用 @keyframes 规则来编写动画过程中的变化，在选择器中使用animation属性来设置 @keyframes 的方式   </p>
+<h1 id="2、JavaScript-制作动画"><a href="#2、JavaScript-制作动画" class="headerlink" title="2、JavaScript 制作动画"></a>2、JavaScript 制作动画</h1><p>想要制作更为复杂，更实用的动画还需用到JavaScript来加强交互。   </p>
+<p>这里先上 <strong><a href="/Subpage/pokerGame/js_animation1.html">DEMO</a></strong> </p>
+<h2 id="1）HTML"><a href="#1）HTML" class="headerlink" title="1）HTML"></a>1）HTML</h2><p>首先在网页中插入一个要移动的标记，这里使用id来定位。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"move"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>之后我们只需要操作这个id为move的div元素了。   </p>
+<h2 id="2）CSS（层叠样式表）"><a href="#2）CSS（层叠样式表）" class="headerlink" title="2）CSS（层叠样式表）"></a>2）CSS（层叠样式表）</h2><p>稍微对元素进行适当的修饰。为了方便看到我们要给元素加一个背景。   </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#move</span> &#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">background</span>: red;</div><div class="line">	<span class="attribute">position</span>: absolute;</div><div class="line">	<span class="attribute">transform</span>:<span class="built_in">translate3d</span>(0px,0px,0px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>注意这里我们设置了 position和transform属性</strong>，因为稍后我们的JS就是基于这两个属性的基础之上。   </p>
+<h2 id="3）JavaScript"><a href="#3）JavaScript" class="headerlink" title="3）JavaScript"></a>3）JavaScript</h2><p>首先我们需要在网页加载之后把move移动到一个位置。这里我们需要修改move的left和top属性才能让他到指定的位置,但left和top属性依赖于position属性,所以之前我们在css的时候就应该设置好。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveElement</span>(<span class="params">elementID,final_x,final_y,time_val</span>)</span>&#123;</div></pre></td></tr></table></figure>
+<p>首先这个函数有四个参数,第一个参数为要移动的元素id,第二个参数为要移动的x轴,第三个参数为要移动的y轴,第四个参数为速度。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//对象检测</span></div><div class="line"><span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line"><span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(elementID)) <span class="keyword">return</span> <span class="literal">false</span>;</div></pre></td></tr></table></figure>
+<p>接下来检测浏览器是否有该方法和对象   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(elementID);</div><div class="line"><span class="keyword">var</span> dist = <span class="number">0</span>;</div></pre></td></tr></table></figure>
+<p>变量elem得到了move元素,dist是用来计算速度的变量。   </p>
+<p>接下来需要得到move元素的left和top值进行与目标地计算。<strong>注意：只有使用了dom脚本或style属性为元素分配了位置后才能获取到left和top值,否则获取不到</strong> 所以在后面的时候我们可以使用js来初始化。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> xpos = <span class="built_in">parseInt</span>(elem.style.left);</div><div class="line"><span class="keyword">var</span> ypos = <span class="built_in">parseInt</span>(elem.style.top);</div></pre></td></tr></table></figure>
+<p>这里使用了parseInt();   </p>
+<blockquote>
+<p>parseInt() 函数可解析一个字符串，并返回一个整数。   </p>
+</blockquote>
+<p>这里把获得的left和top属性转换成数字: “16px” -&gt; 16   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//安全检查</span></div><div class="line"><span class="keyword">if</span>(!elem.style.left)&#123;</div><div class="line">	elem.style.left = <span class="string">"0px"</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(!elem.style.top)&#123;</div><div class="line">	elem.style.top = <span class="string">"0px"</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>得到了left和top之后还需要判断一下是否有值，如果没有的话就给初始化0给它。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(xpos == final_x &amp;&amp; ypos == final_y)</div><div class="line">	<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line"><span class="keyword">if</span>(xpos &lt; final_x)&#123;</div><div class="line">	<span class="comment">//方法Math.ceil()</span></div><div class="line">	<span class="comment">//ceil() 方法可对一个数进行上舍入。</span></div><div class="line">	dist = <span class="built_in">Math</span>.ceil((final_x - xpos)/speed);</div><div class="line">	xpos += dist;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(xpos &gt; final_x)&#123;</div><div class="line">	dist = <span class="built_in">Math</span>.ceil((xpos - final_x)/speed);</div><div class="line">	xpos -= dist;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(ypos &lt; final_y)&#123;</div><div class="line">	dist = <span class="built_in">Math</span>.ceil((final_y - ypos)/speed);</div><div class="line">	ypos += dist;</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(ypos &gt; final_y)&#123;</div><div class="line">	dist = <span class="built_in">Math</span>.ceil((ypos - final_y)/speed);</div><div class="line">	ypos -= dist;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>之后则是进行判断,判断元素move在目的地的哪边，如果在左边则xpos增加，否则xpos减少,y轴也是一样。   </p>
+<p><img src="/img/JavaScript/move.PNG" alt="move移动示意图">    </p>
+<p>为了实现距离目的地越远速度越快,越近的时候变慢,而且不是一直以一个速度靠近,所以我们需要让xpos每次增加的距离不一样。这里用 <strong>(目的地-move)/速度)</strong>来计算每一次增加的距离。 <strong>假设初始为：(500-10)\10;</strong> 那么每次就增加49个像素,<strong>直到(500-491)\10的时候由Math.ceil()进行上舍入</strong> 到达491之后则每次移动1个像素。   </p>
+<p>最后需要把xpos和ypos的值给move变成为left值和top值。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">elem.style.left = xpos + <span class="string">'px'</span>;</div><div class="line">elem.style.top = ypos + <span class="string">'px'</span>;</div></pre></td></tr></table></figure>
+<p>有了这些之后还需要进行函数回调,但是回调不是立马,需要一个时间间隔,这时候就需要我们的主角登场了：<strong><a href="http://www.w3school.com.cn/jsref/met_win_settimeout.asp" target="_blank" rel="external">setTimeout(functionName,millisec)</a></strong>   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> repeat = <span class="string">"moveElement('"</span>+elementID+<span class="string">"',"</span>+final_x+<span class="string">","</span>+final_y+<span class="string">","</span>+speed+<span class="string">")"</span>;</div></pre></td></tr></table></figure>
+<p>我们先把传递的字符串拼接起来给一个变量,这样有利于阅读和修改。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> timeOut = setTimeout(repeat,<span class="number">10</span>);</div></pre></td></tr></table></figure>
+<p>最后进行回调,并把setTimeout返回值给timeOut以方便我们取消。    </p>
+<h2 id="收尾"><a href="#收尾" class="headerlink" title="收尾"></a>收尾</h2><p>最后我们可以在HTML中触发这个函数：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"moveElement('move',500,500,10);"</span>&gt;</span>移动至500<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"moveElement('move',1000,1000,10);"</span>&gt;</span>移动至1000<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>但是你会发现如果你快速点击两个按钮的话,move就会出错,因为在还没有结束上一个移动之前就点击了移动到下一个位置,<strong>会导致元素像拔河一样拉来拉去</strong> 所以我们在下一个移动之前应该先判断上一个移动是否完成,<strong> 如果没有完成则使用clearTimeout()清除setTimeout();</strong> JavaScript允许我们为对象添加属性,所以我们可以直接给elem添加一个属性保存setTimeout()：elem.movement = setTimeout(repeat,10);再前面开始的时候判断是否有,有的话则清除上一个。   </p>
+<p>最后function moveElement()函数内容修改为:   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//修改元素的left和top属性进行移动</span></div><div class="line"><span class="comment">//注意：只有使用了dom脚本或style属性为元素分配了位置后才能获取到left和top值,否则获取不到</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveElement</span>(<span class="params">elementID,final_x,final_y,speed</span>)</span>&#123;</div><div class="line">	<span class="comment">//对象检测</span></div><div class="line">	<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(elementID)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	<span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(elementID);</div><div class="line">	<span class="keyword">var</span> dist = <span class="number">0</span>;</div><div class="line">	<span class="comment">//清除上一个未完成的移动</span></div><div class="line">	<span class="keyword">if</span>(elem.movement)</div><div class="line">		clearTimeout(elem.movement);</div><div class="line">	<span class="keyword">var</span> xpos = <span class="built_in">parseInt</span>(elem.style.left);</div><div class="line">	<span class="keyword">var</span> ypos = <span class="built_in">parseInt</span>(elem.style.top);</div><div class="line">	<span class="comment">//安全检查</span></div><div class="line">	<span class="keyword">if</span>(!elem.style.left)&#123;</div><div class="line">		elem.style.left = <span class="string">"0px"</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(!elem.style.top)&#123;</div><div class="line">		elem.style.top = <span class="string">"0px"</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(xpos == final_x &amp;&amp; ypos == final_y)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">if</span>(xpos &lt; final_x)&#123;</div><div class="line">		<span class="comment">//方法Math.ceil()</span></div><div class="line">		<span class="comment">//ceil() 方法可对一个数进行上舍入。</span></div><div class="line">		dist = <span class="built_in">Math</span>.ceil((final_x - xpos)/speed);</div><div class="line">		xpos += dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(xpos &gt; final_x)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((xpos - final_x)/speed);</div><div class="line">		xpos -= dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(ypos &lt; final_y)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((final_y - ypos)/speed);</div><div class="line">		ypos += dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(ypos &gt; final_y)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((ypos - final_y)/speed);</div><div class="line">		ypos -= dist;</div><div class="line">	&#125;</div><div class="line">	elem.style.left = xpos + <span class="string">'px'</span>;</div><div class="line">	elem.style.top = ypos + <span class="string">'px'</span>;</div><div class="line">	<span class="keyword">var</span> repeat = <span class="string">"moveElement('"</span>+elementID+<span class="string">"',"</span>+final_x+<span class="string">","</span>+final_y+<span class="string">","</span>+speed+<span class="string">")"</span>;</div><div class="line">	<span class="comment">//JavaScript允许我们为元素创建属性，这里创建了一个属性movement</span></div><div class="line">	elem.movement=setTimeout(repeat,<span class="number">10</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>接下来只需要调用这个函数就可以了。   </p>
+<p>后面修改transform值也是同样的方法，但是需要使用正则来匹配到translate3d属性,否则无法获取到transform:translate3d();属性   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//修改元素的translate3d()实现移动.</span></div><div class="line"><span class="comment">//注意：只有使用了dom脚本或style属性为元素分配了transform才能获取到translate3d值,否则获取不到</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveElementTran</span>(<span class="params">elementID,tran_x,tran_y,speed</span>)</span>&#123;</div><div class="line">	<span class="comment">//对象检测</span></div><div class="line">	<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(elementID)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	<span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(elementID);</div><div class="line">	<span class="keyword">var</span> dist = <span class="number">0</span>;</div><div class="line">	<span class="keyword">var</span> transForm = elem.style.transform || <span class="string">''</span>;</div><div class="line">	<span class="comment">//正则.match()方法返回一个数组</span></div><div class="line">	<span class="comment">//说明：(\d)匹配的值保存在数组</span></div><div class="line">	<span class="keyword">var</span> xpos = transForm.match(<span class="regexp">/translate3d\(\s*(\d+)+px,\s*(\d+)px,\s*(\d+)px\)/i</span>);</div><div class="line">	<span class="keyword">var</span> ypos = transForm.match(<span class="regexp">/translate3d\(\s*(\d+)+px,\s*(\d+)px,\s*(\d+)px\)/i</span>);</div><div class="line">	<span class="keyword">if</span>(elem.movement)</div><div class="line">		clearTimeout(elem.movement);</div><div class="line">	<span class="keyword">if</span>(xpos == <span class="literal">null</span> &amp;&amp; ypos == <span class="literal">null</span>)</div><div class="line">	&#123;</div><div class="line">		xpos=ypos=<span class="number">0</span>;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">		xpos = xpos[<span class="number">1</span>] <span class="number">-0</span>;</div><div class="line">		ypos = ypos[<span class="number">2</span>] <span class="number">-0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(xpos == tran_x &amp;&amp; ypos == tran_y)</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">	<span class="keyword">if</span>(xpos &lt; tran_x)&#123;</div><div class="line">		<span class="comment">//方法Math.ceil()</span></div><div class="line">		<span class="comment">//ceil() 方法可对一个数进行上舍入。</span></div><div class="line">		dist = <span class="built_in">Math</span>.ceil((tran_x - xpos)/speed);</div><div class="line">		xpos += dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(xpos &gt; tran_x)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((xpos - tran_x)/speed);</div><div class="line">		xpos -= dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(ypos &lt; tran_y)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((tran_y - ypos)/speed);</div><div class="line">		ypos += dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span>(ypos &gt; tran_y)&#123;</div><div class="line">		dist = <span class="built_in">Math</span>.ceil((ypos - tran_y)/speed);</div><div class="line">		ypos -= dist;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">var</span> tran3d = <span class="string">"translate3d("</span> + xpos + <span class="string">"px,"</span>+ ypos + <span class="string">"px,"</span> + <span class="string">"0"</span> + <span class="string">")"</span>;</div><div class="line">	elem.style.transform = tran3d ;</div><div class="line">	<span class="keyword">var</span> repeat = <span class="string">"moveElementTran('"</span>+elementID+<span class="string">"',"</span>+tran_x+<span class="string">","</span>+tran_y+<span class="string">","</span>+speed+<span class="string">")"</span>;</div><div class="line">	<span class="keyword">var</span> view = <span class="built_in">document</span>.getElementById(<span class="string">'view2'</span>);</div><div class="line">	view.innerHTML = tran3d;</div><div class="line">	<span class="comment">//JavaScript允许我们为元素创建属性，这里创建了一个属性movement</span></div><div class="line">	elem.movement=setTimeout(repeat,<span class="number">10</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>最后自己写一些驱动函数来驱动它,这里就不做说明了。直接上最后的代码:   </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>JavaScript动画<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">		<span class="selector-id">#move</span> &#123;</div><div class="line">			<span class="attribute">width</span>: <span class="number">50px</span>;</div><div class="line">			<span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">			<span class="attribute">background</span>: red;</div><div class="line">			<span class="attribute">position</span>: absolute;</div><div class="line">			<span class="attribute">transform</span>:<span class="built_in">translate3d</span>(0px,0px,0px);</div><div class="line">		&#125;</div><div class="line">		<span class="selector-tag">span</span> &#123;</div><div class="line">			<span class="attribute">margin-right</span>: <span class="number">30px</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="selector-class">.input</span> &#123;</div><div class="line">			<span class="attribute">position</span>: fixed;</div><div class="line">			<span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">			<span class="attribute">left</span>: <span class="number">20%</span>;</div><div class="line">		&#125;</div><div class="line">	<span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"move"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	</div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"input"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>效果1:修改元素left、top属性。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;效果2:修改元素transform：translate3d(x,y)<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		left:</div><div class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">max</span>=<span class="string">"1000"</span> <span class="attr">min</span>=<span class="string">"200"</span> <span class="attr">step</span>=<span class="string">"5"</span> <span class="attr">value</span>=<span class="string">"300"</span> <span class="attr">oninput</span>=<span class="string">"change(this)"</span> <span class="attr">onchange</span>=<span class="string">"change(this)"</span> <span class="attr">id</span>=<span class="string">"input1"</span> /&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>300<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		top:</div><div class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">max</span>=<span class="string">"1000"</span> <span class="attr">min</span>=<span class="string">"200"</span> <span class="attr">step</span>=<span class="string">"5"</span> <span class="attr">value</span>=<span class="string">"300"</span> <span class="attr">oninput</span>=<span class="string">"change(this)"</span> <span class="attr">onchange</span>=<span class="string">"change(this)"</span> <span class="attr">id</span>=<span class="string">"input2"</span> /&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>300<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		time:</div><div class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"range"</span> <span class="attr">max</span>=<span class="string">"100"</span> <span class="attr">min</span>=<span class="string">"5"</span> <span class="attr">step</span>=<span class="string">"2"</span> <span class="attr">value</span>=<span class="string">"10"</span> <span class="attr">oninput</span>=<span class="string">"change(this)"</span> <span class="attr">onchange</span>=<span class="string">"change(this)"</span> <span class="attr">id</span>=<span class="string">"input3"</span> /&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>10<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"run()"</span>&gt;</span>效果1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"runTran()"</span>&gt;</span>效果2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">br</span> /&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"view1"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"view2"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">		<span class="comment">//预加载函数</span></div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">addLoadEvent</span>(<span class="params">func</span>) </span>&#123;</div><div class="line">			<span class="keyword">var</span> onLoad = <span class="built_in">window</span>.onload;</div><div class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span> <span class="built_in">window</span>.onload != <span class="string">'function'</span>)&#123;</div><div class="line">				<span class="built_in">window</span>.onload = func;</div><div class="line">			&#125;<span class="keyword">else</span>&#123;</div><div class="line">				<span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">					onLoad();</div><div class="line">					func();</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="comment">//修改元素的left和top属性进行移动</span></div><div class="line">		<span class="comment">//注意：只有使用了dom脚本或style属性为元素分配了位置后才能获取到left和top值,否则获取不到</span></div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">moveElement</span>(<span class="params">elementID,final_x,final_y,speed</span>)</span>&#123;</div><div class="line">			<span class="comment">//对象检测</span></div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(elementID)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(elementID);</div><div class="line">			<span class="keyword">var</span> dist = <span class="number">0</span>;</div><div class="line">			<span class="keyword">if</span>(elem.movement)</div><div class="line">				clearTimeout(elem.movement);</div><div class="line">			<span class="keyword">var</span> xpos = <span class="built_in">parseInt</span>(elem.style.left);</div><div class="line">			<span class="keyword">var</span> ypos = <span class="built_in">parseInt</span>(elem.style.top);</div><div class="line">			<span class="comment">//安全检查</span></div><div class="line">			<span class="keyword">if</span>(!elem.style.left)&#123;</div><div class="line">				elem.style.left = <span class="string">"0px"</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(!elem.style.top)&#123;</div><div class="line">				elem.style.top = <span class="string">"0px"</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(xpos == final_x &amp;&amp; ypos == final_y)</div><div class="line">				<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">			<span class="keyword">if</span>(xpos &lt; final_x)&#123;</div><div class="line">				<span class="comment">//方法Math.ceil()</span></div><div class="line">				<span class="comment">//ceil() 方法可对一个数进行上舍入。</span></div><div class="line">				dist = <span class="built_in">Math</span>.ceil((final_x - xpos)/speed);</div><div class="line">				xpos += dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(xpos &gt; final_x)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((xpos - final_x)/speed);</div><div class="line">				xpos -= dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(ypos &lt; final_y)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((final_y - ypos)/speed);</div><div class="line">				ypos += dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(ypos &gt; final_y)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((ypos - final_y)/speed);</div><div class="line">				ypos -= dist;</div><div class="line">			&#125;</div><div class="line">			elem.style.left = xpos + <span class="string">'px'</span>;</div><div class="line">			elem.style.top = ypos + <span class="string">'px'</span>;</div><div class="line">			<span class="keyword">var</span> repeat = <span class="string">"moveElement('"</span>+elementID+<span class="string">"',"</span>+final_x+<span class="string">","</span>+final_y+<span class="string">","</span>+speed+<span class="string">")"</span>;</div><div class="line">			<span class="keyword">var</span> view = <span class="built_in">document</span>.getElementById(<span class="string">'view1'</span>);</div><div class="line">			view.innerHTML = <span class="string">"left:"</span> + xpos+ <span class="string">"px  top:"</span> + ypos + <span class="string">"px"</span>;</div><div class="line">			<span class="comment">//JavaScript允许我们为元素创建属性，这里创建了一个属性movement</span></div><div class="line">			elem.movement=setTimeout(repeat,<span class="number">10</span>);</div><div class="line">		&#125;</div><div class="line">		<span class="comment">//修改元素的translate3d()实现移动.</span></div><div class="line">		<span class="comment">//注意：只有使用了dom脚本或style属性为元素分配了transform才能获取到translate3d值,否则获取不到</span></div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">moveElementTran</span>(<span class="params">elementID,tran_x,tran_y,speed</span>)</span>&#123;</div><div class="line">			<span class="comment">//对象检测</span></div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(elementID)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">var</span> elem = <span class="built_in">document</span>.getElementById(elementID);</div><div class="line">			<span class="keyword">var</span> dist = <span class="number">0</span>;</div><div class="line">			<span class="keyword">var</span> transForm = elem.style.transform || <span class="string">''</span>;</div><div class="line">			<span class="comment">//正则.match()方法返回一个数组</span></div><div class="line">			<span class="comment">//说明：(x)匹配的值保存在数组</span></div><div class="line">			<span class="keyword">var</span> xpos = transForm.match(<span class="regexp">/translate3d\(\s*(\d+)+px,\s*(\d+)px,\s*(\d+)px\)/i</span>);</div><div class="line">			<span class="keyword">var</span> ypos = transForm.match(<span class="regexp">/translate3d\(\s*(\d+)+px,\s*(\d+)px,\s*(\d+)px\)/i</span>);</div><div class="line">			<span class="keyword">if</span>(elem.movement)</div><div class="line">				clearTimeout(elem.movement);</div><div class="line">			<span class="keyword">if</span>(xpos == <span class="literal">null</span> &amp;&amp; ypos == <span class="literal">null</span>)</div><div class="line">			&#123;</div><div class="line">				xpos=ypos=<span class="number">0</span>;</div><div class="line">			&#125;<span class="keyword">else</span>&#123;</div><div class="line">				xpos = xpos[<span class="number">1</span>] <span class="number">-0</span>;</div><div class="line">				ypos = ypos[<span class="number">2</span>] <span class="number">-0</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(xpos == tran_x &amp;&amp; ypos == tran_y)</div><div class="line">				<span class="keyword">return</span> <span class="literal">true</span>;</div><div class="line">			<span class="keyword">if</span>(xpos &lt; tran_x)&#123;</div><div class="line">				<span class="comment">//方法Math.ceil()</span></div><div class="line">				<span class="comment">//ceil() 方法可对一个数进行上舍入。</span></div><div class="line">				dist = <span class="built_in">Math</span>.ceil((tran_x - xpos)/speed);</div><div class="line">				xpos += dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(xpos &gt; tran_x)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((xpos - tran_x)/speed);</div><div class="line">				xpos -= dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(ypos &lt; tran_y)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((tran_y - ypos)/speed);</div><div class="line">				ypos += dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(ypos &gt; tran_y)&#123;</div><div class="line">				dist = <span class="built_in">Math</span>.ceil((ypos - tran_y)/speed);</div><div class="line">				ypos -= dist;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">var</span> tran3d = <span class="string">"translate3d("</span> + xpos + <span class="string">"px,"</span>+ ypos + <span class="string">"px,"</span> + <span class="string">"0"</span> + <span class="string">")"</span>;</div><div class="line">			elem.style.transform = tran3d ;</div><div class="line">			<span class="keyword">var</span> repeat = <span class="string">"moveElementTran('"</span>+elementID+<span class="string">"',"</span>+tran_x+<span class="string">","</span>+tran_y+<span class="string">","</span>+speed+<span class="string">")"</span>;</div><div class="line">			<span class="keyword">var</span> view = <span class="built_in">document</span>.getElementById(<span class="string">'view2'</span>);</div><div class="line">			view.innerHTML = tran3d;</div><div class="line">			<span class="comment">//JavaScript允许我们为元素创建属性，这里创建了一个属性movement</span></div><div class="line">			elem.movement=setTimeout(repeat,<span class="number">10</span>);</div><div class="line">		&#125;</div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">positionMessage</span>(<span class="params">x,y,time</span>)</span>&#123;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(<span class="string">'move'</span>)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			moveElement(<span class="string">"move"</span>,x,y,time);</div><div class="line">		&#125;</div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">positionMessageTran</span>(<span class="params">x,y,time</span>)</span>&#123;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			<span class="keyword">if</span>(!<span class="built_in">document</span>.getElementById(<span class="string">'move'</span>)) <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">			moveElementTran(<span class="string">"move"</span>,x,y,time);</div><div class="line">		&#125;</div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">change</span>(<span class="params">elem</span>)</span>&#123;</div><div class="line">			<span class="keyword">var</span> nextSibling = elem.nextSibling;</div><div class="line">			nextSibling.innerHTML = elem.value;</div><div class="line">  		&#125;</div><div class="line">  		<span class="function"><span class="keyword">function</span> <span class="title">run</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  			<span class="keyword">var</span> x = <span class="built_in">document</span>.getElementById(<span class="string">'input1'</span>).value;</div><div class="line">  			<span class="keyword">var</span> y = <span class="built_in">document</span>.getElementById(<span class="string">'input2'</span>).value;</div><div class="line">  			<span class="keyword">var</span> time = <span class="built_in">document</span>.getElementById(<span class="string">'input3'</span>).value;</div><div class="line">  			positionMessage(x,y,time);</div><div class="line">  		&#125;</div><div class="line">  		<span class="function"><span class="keyword">function</span> <span class="title">runTran</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  			<span class="keyword">var</span> x = <span class="built_in">document</span>.getElementById(<span class="string">'input1'</span>).value;</div><div class="line">  			<span class="keyword">var</span> y = <span class="built_in">document</span>.getElementById(<span class="string">'input2'</span>).value;</div><div class="line">  			<span class="keyword">var</span> time = <span class="built_in">document</span>.getElementById(<span class="string">'input3'</span>).value;</div><div class="line">  			positionMessageTran(x,y,time);</div><div class="line">  		&#125;</div><div class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>最后就到此了,如发现文中有问题可以在文章下方留言.谢谢</strong> </p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持,我会继续努力<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -204,186 +312,99 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/31/JavaScript/初学JavaScript动画/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/21/C/C语言之——-结构、联合、枚举、typedef/" class="archive-article-date">
-  	<time datetime="2017-05-21T03:45:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-21</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/21/C/C语言之——-结构、联合、枚举、typedef/">C语言之——-结构、联合、枚举、typedef</a>
-    </h1>
+  
+    <a href="/2017/05/21/C/C语言之——-结构、联合、枚举、typedef/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C语言之——-结构、联合、枚举、typedef</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "https://cczeng.github.io/2017/05/31/JavaScript/初学JavaScript动画/", 
+    sourceId: "JavaScript/初学JavaScript动画",
+    productKey: "fd9aceff07134e4f9c230333725250f0",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/16/JavaScript/pokerGame/JS扑克牌小游戏-二/" class="archive-article-date">
-  	<time datetime="2017-05-16T12:29:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/16/JavaScript/pokerGame/JS扑克牌小游戏-二/">JS扑克牌小游戏(二)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/16/C Sharp/C-笔记——面向对象编程简介/" class="archive-article-date">
-  	<time datetime="2017-05-16T02:55:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/16/C Sharp/C-笔记——面向对象编程简介/">C#笔记——面向对象编程简介</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">C#</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/12/C/TelephoneBook/C语言之电话溥-一/" class="archive-article-date">
-  	<time datetime="2017-05-12T08:44:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/12/C/TelephoneBook/C语言之电话溥-一/">C语言之电话溥(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -407,8 +428,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
