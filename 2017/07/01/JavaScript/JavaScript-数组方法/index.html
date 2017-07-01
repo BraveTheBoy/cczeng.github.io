@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://cczeng.github.io/2017/07/01/JavaScript/JavaScript-数组方法/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
 <meta property="og:description" content="JavaScript 数组方法JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。    可直接点击这里打开网页后Ctrl+F查找方法，例如：迭代">
-<meta property="og:updated_time" content="2017-07-01T08:25:11.406Z">
+<meta property="og:updated_time" content="2017-07-01T08:43:38.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 数组方法">
 <meta name="twitter:description" content="JavaScript 数组方法JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。    可直接点击这里打开网页后Ctrl+F查找方法，例如：迭代">
@@ -194,8 +194,14 @@
 <h3 id="队列方法（先进后出）-删除添加项"><a href="#队列方法（先进后出）-删除添加项" class="headerlink" title="队列方法（先进后出）/删除添加项"></a>队列方法（先进后出）/删除添加项</h3><p>方法名： <strong>shift() &amp;&amp; unshift()</strong>   </p>
 <p>shift() <strong>移除数组第一项</strong> 并返回该项。   </p>
 <p>unshift() <strong>在数组前端添加任意个项</strong>并返回数组长度   </p>
+<p>例:  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'blue'</span>,<span class="string">'green'</span>];</div><div class="line"><span class="keyword">var</span> item = colors.shift();</div><div class="line">alert(item);<span class="comment">//red</span></div><div class="line"><span class="keyword">var</span> count = colors.unshift(<span class="string">'red'</span>,<span class="string">'yellow'</span>);</div><div class="line">alert(count);<span class="comment">//4</span></div></pre></td></tr></table></figure>
+<h3 id="重排-排序"><a href="#重排-排序" class="headerlink" title="重排/排序"></a>重排/排序</h3><p>方法名： <strong>reverse() &amp;&amp; sort()</strong>   </p>
+<p>reverse() 把数组翻转   </p>
+<p>sort() 调用每一项的toString()方法后比较字符串大小排序（不好排序数字）   </p>
+<p>sort()有一个办法可以解决排序数字   </p>
 <p>例：   </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'blue'</span>,<span class="string">'green'</span>];</div><div class="line">	<span class="keyword">var</span> item = colors.shift();</div><div class="line">	alert(item);<span class="comment">//red</span></div><div class="line">	<span class="keyword">var</span> count = colors.unshift(<span class="string">'red'</span>,<span class="string">'yellow'</span>);</div><div class="line">	alert(count);<span class="comment">//4</span></div><div class="line"><span class="string">``</span><span class="string">`   </span></div><div class="line"></div><div class="line">### 重排/排序</div><div class="line"></div><div class="line">方法名： **reverse() &amp;&amp; sort()**   </div><div class="line"></div><div class="line">reverse() 把数组翻转   </div><div class="line"></div><div class="line">sort() 调用每一项的toString()方法后比较字符串大小排序（不好排序数字）   </div><div class="line"></div><div class="line">sort()有一个办法可以解决排序数字   </div><div class="line"></div><div class="line">例：   </div><div class="line"></div><div class="line">`<span class="string">``</span>JS</div><div class="line">	<span class="keyword">var</span> values = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line">	<span class="keyword">var</span> values1 = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">15</span>];</div><div class="line">	values.reverse();</div><div class="line">	alert(values);<span class="comment">//5,4,3,2,1</span></div><div class="line">	values1.sort();</div><div class="line">	alert(values1);<span class="comment">//0,1,10,15,5</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> values = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> values1 = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">15</span>];</div><div class="line">values.reverse();</div><div class="line">alert(values);<span class="comment">//5,4,3,2,1</span></div><div class="line">values1.sort();</div><div class="line">alert(values1);<span class="comment">//0,1,10,15,5</span></div></pre></td></tr></table></figure>
 <p>明显看出sort()方法的缺陷，但是可以通过下面的办法解决：   </p>
 <p>sort()方法<strong>接受一个比较函数作为参数</strong>：   第一个应该位于第二个之前则返回负数，相同则返回0，第一个应该位于第二个之后则返回正数。</p>
 <p>列：   </p>
@@ -465,7 +471,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">C</a>
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -473,7 +479,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">C#</a>
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
               <li class="article-tag-list-item">
