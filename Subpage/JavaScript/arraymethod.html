@@ -109,9 +109,7 @@
 		document.write('<p>'+values+'</p>');
 		var sum = values.reduce(function(prev,cur,index,array){return prev+cur;});
 		document.write('<p>var sum = values.reduce(function(prev,cur,index,array){return prev+cur;});</p> =' +sum );
-		var values = [0,1,5,10,15];
-	values.sort(compare);
-	alert(values);//15,10,5,1,0
+
 		function compare(value1,value2) {
 			return value2 - value1;
 			// 想要改变排序方式只需把value2-value1改成value1-value2
