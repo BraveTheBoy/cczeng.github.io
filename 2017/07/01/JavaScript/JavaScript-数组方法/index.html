@@ -7,19 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cczeng.github.io">
-  <title>C#笔记——面向对象编程简介 | 曾亮的博客 | 诗和远方</title>
+  <title>JavaScript 数组方法 | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
-<meta name="keywords" content="C#,笔记">
+  <meta name="description" content="JavaScript 数组方法JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。    可直接点击这里打开网页后Ctrl+F查找方法，例如：迭代">
+<meta name="keywords" content="JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C#笔记——面向对象编程简介">
-<meta property="og:url" content="https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/index.html">
+<meta property="og:title" content="JavaScript 数组方法">
+<meta property="og:url" content="https://cczeng.github.io/2017/07/01/JavaScript/JavaScript-数组方法/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
-<meta property="og:updated_time" content="2017-05-16T03:36:27.430Z">
+<meta property="og:description" content="JavaScript 数组方法JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。    可直接点击这里打开网页后Ctrl+F查找方法，例如：迭代">
+<meta property="og:updated_time" content="2017-07-01T08:25:11.406Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C#笔记——面向对象编程简介">
-<meta name="twitter:description" content="摘自C#入门经典（第七版）——第八章对象和类  对象是OOP 应用程序的组成部件。类 是用于实例化对象的类型定义。 对象可以包含数据，提供其他代码可以使用的操作。数据 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。 属性和方法称为类的成员。属性可以进行读取访问、写入访问或读写访问。类成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西">
+<meta name="twitter:title" content="JavaScript 数组方法">
+<meta name="twitter:description" content="JavaScript 数组方法JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。    可直接点击这里打开网页后Ctrl+F查找方法，例如：迭代">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
   
@@ -160,48 +160,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-C Sharp/C-笔记——面向对象编程简介" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JavaScript/JavaScript-数组方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      C#笔记——面向对象编程简介
+      JavaScript 数组方法
     </h1>
   
 
         
-        <a href="/2017/05/16/C Sharp/C-笔记——面向对象编程简介/" class="archive-article-date">
-  	<time datetime="2017-05-16T02:55:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-16</time>
+        <a href="/2017/07/01/JavaScript/JavaScript-数组方法/" class="archive-article-date">
+  	<time datetime="2017-07-01T07:24:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="摘自C-入门经典（第七版）——第八章"><a href="#摘自C-入门经典（第七版）——第八章" class="headerlink" title="摘自C#入门经典（第七版）——第八章"></a>摘自C#入门经典（第七版）——第八章</h4><h3 id="对象和类"><a href="#对象和类" class="headerlink" title="对象和类"></a>对象和类</h3><blockquote>
-<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>是<strong><a href="http://baike.baidu.com/link?url=Sg7eDc1ZJE20wqd0eNks5ijPt_TjCk0qvp1-ag7t-KBhhWThS3YBCVgk36RJsN8cZyHMX-hWqzwo0bDnRTfky_" target="_blank" rel="external">OOP</a></strong> <em>应用程序的组成部件。<strong><a href="http://baike.baidu.com/link?url=M3K5MeRHyEjE5N34-KljAW7UEA_Nkgn5XibqkpntmzqUyqVBYaV9cJajB63jUwJpdIkQsTffS86Bve4urJnaMK" target="_blank" rel="external">类</a></strong> </em>是用于实例化对象的类型定义。<em> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>可以包含<strong><a href="http://baike.baidu.com/link?url=a7My4fQm5KgL3B09I2DM9T4A7QEu8G2e9pWk3VECCCgUPmNBD5z897TcnKaetZs6xhwZ6rejSDL_arbiMZv_5Z0AdmRCSlvVicA1AfiYYva" target="_blank" rel="external">数据</a></strong>，提供其他代码可以使用的操作。<strong><a href="http://baike.baidu.com/link?url=a7My4fQm5KgL3B09I2DM9T4A7QEu8G2e9pWk3VECCCgUPmNBD5z897TcnKaetZs6xhwZ6rejSDL_arbiMZv_5Z0AdmRCSlvVicA1AfiYYva" target="_blank" rel="external">数据</a></strong> 可以通过属性提供外部代码使用，操作可以通过方法提供外部代码使用。<br> <strong><a href="http://baike.baidu.com/link?url=tgsp2RneYACBdmAT45FT3HXb2sivBhsJ9p2J2b4TStje_qBQw9DiK0-aobsCPunlniLsvXe_l5yKyYri_XtFKukTr2YPZighE8mPRRjtUwm" target="_blank" rel="external">属性</a></strong>和<strong>方法</strong>称为类的成员。<strong><a href="http://baike.baidu.com/link?url=tgsp2RneYACBdmAT45FT3HXb2sivBhsJ9p2J2b4TStje_qBQw9DiK0-aobsCPunlniLsvXe_l5yKyYri_XtFKukTr2YPZighE8mPRRjtUwm" target="_blank" rel="external">属性</a></strong>可以进行读取访问、写入访问或读写访问。<strong><a href="http://baike.baidu.com/link?url=M3K5MeRHyEjE5N34-KljAW7UEA_Nkgn5XibqkpntmzqUyqVBYaV9cJajB63jUwJpdIkQsTffS86Bve4urJnaMK" target="_blank" rel="external">类</a></strong>成员可以是公共的（可用于所有代码）或私有的（只有类定义中的代码可以使用）。在.NET中，所有的东西都是<em>*<a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></em></em>    </p>
-</blockquote>
-<a id="more"></a>
-<h3 id="对象的生命周期"><a href="#对象的生命周期" class="headerlink" title="对象的生命周期"></a>对象的生命周期</h3><blockquote>
-<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>通过调用它的一个<strong><a href="http://baike.baidu.com/link?url=usuz1oSaBbDb6LL_58xxv4wmLuYfUhzbwc_aMJStc9PxqPpwJ2FCTu52NtL_3Uehnnua7M8n0uNbYb-A9ZRB7M8wvq-Jm3T7kfqCL7oPT7m76Xlrwr983lAlKxH3ng8u" target="_blank" rel="external">构造函数</a></strong>来实例化。不再需要<strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>时，就执行其<strong><a href="http://baike.baidu.com/link?url=IYGZxeqxX-ym3RRR5E55F8H9cvwLYe1GguhZ5aVG5b-Z8Y-m69WSapulTF7mA3LWr5LbIj4jUoZ08UPgUv6eB5LY7_IvDVO8cmawG0TFcBS_FoLEY7FxUZIwUmtma-BT" target="_blank" rel="external">构析函数</a></strong>，以删除它。<br> <strong><em>重点：</em></strong>要清理对象，常常需要手工删除它。</p>
-</blockquote>
-<h3 id="静态成员和实例成员"><a href="#静态成员和实例成员" class="headerlink" title="静态成员和实例成员"></a>静态成员和实例成员</h3><blockquote>
-<p>实例成员只能在类的对象实例上使用，静态成员只能直接通过类定义使用，它不与实例关联。   </p>
-</blockquote>
-<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><blockquote>
-<p><strong>接口</strong> <em>是可以在类上实现的公共属性和方法的集合</em>。可将 实现了一个接口的类<em>的<em>*<a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></em></em>赋值给对应实例类型的变量。之后通过改变量，可以使用该接口定义的成员。</p>
-</blockquote>
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><blockquote>
-<p><strong>继承</strong> <em>是一个类定义派生于另一个类定义的机制。</em>  <strong>类</strong>从其<strong>父类</strong>中继承成员，每个<strong>类</strong>都只能有一个<strong>父类</strong>。<strong>子类</strong>不能访问<strong>父类</strong>的私有成员，但可以定义受保护的成员，<strong><em>受保护的成员只能在该类和派生于该类的子类中使用</em></strong> 。<strong>子类</strong>可以重写<strong>父类</strong>中的虚拟成员。所有的类都有一个以<strong>System.Object</strong>结尾的继承链，在C#中，<strong>System.Object</strong>有一个别名<strong>object</strong>   </p>
-</blockquote>
-<h3 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h3><blockquote>
-<p>从一个派生类实例化的所有对象都可以看成其父类的实例。   </p>
-</blockquote>
-<h3 id="对象关系和特性"><a href="#对象关系和特性" class="headerlink" title="对象关系和特性"></a>对象关系和特性</h3><blockquote>
-<p> <strong><a href="http://baike.baidu.com/link?url=gOglAqhLQQeNdd7RawEn_DTRzfmnT1NnVQSXW36g85v2-gxHGgmLXDucRstE8walCQg6azWfufn5s2c-8IW0LXNG7-9arDGkTgx-zkQJo0e" target="_blank" rel="external">对象</a></strong>可以包含其他对象，也可以表示其他对象的集合。  <strong><em>要在表达式中处理对象，常常要通过运算符重载，定义运算符如何处理对象。</em></strong> 对象可以提供事件，事件因某种内部处理而被触发，客户端代码通过提供事件处理程序来响应事件</p>
-</blockquote>
+        <h1 id="JavaScript-数组方法"><a href="#JavaScript-数组方法" class="headerlink" title="JavaScript 数组方法"></a>JavaScript 数组方法</h1><p>JS的数组与其他语言最大的区别在于JS的数组每一项都可以存储不同数据类型。   </p>
+<p>可直接<a href="/Subpage/JavaScript/arraymethod.html">点击这里</a>打开网页后Ctrl+F查找方法，例如：迭代<br><a id="more"></a></p>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = <span class="keyword">new</span> <span class="built_in">Array</span>();<span class="comment">//使用Array的构造函数</span></div><div class="line"><span class="keyword">var</span> colors = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">20</span>);</div><div class="line"><span class="keyword">var</span> colors = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'red'</span>,<span class="string">'blue'</span>,<span class="string">'green'</span>);</div><div class="line"><span class="comment">//数组字面量表示法</span></div><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'blue'</span>,<span class="string">'green'</span>];</div><div class="line"><span class="keyword">var</span> colors = [];<span class="comment">//空数组</span></div></pre></td></tr></table></figure>
+<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><p>数组的length属性是可 <strong>读写</strong> 的。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'green'</span>,<span class="string">'blue'</span>];</div><div class="line">alert(colors.length);<span class="comment">//3</span></div><div class="line">colors.length =<span class="number">2</span>;</div><div class="line">alert(colors);<span class="comment">//red,green</span></div><div class="line"><span class="comment">//上面默认调用了数组每一项的toString方法</span></div></pre></td></tr></table></figure></p>
+<p><strong>添加数组长度</strong> array.length :<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'green'</span>,<span class="string">'blue'</span>];</div><div class="line">colors[colors.length] = <span class="string">'orange'</span>;</div><div class="line">colors[colors.length] = <span class="string">'brown'</span>;</div><div class="line">alert(colors);<span class="comment">//red,green,blue,orange,brown</span></div><div class="line"><span class="comment">//由于数组最后一项的索引始终是array.length-1，因此就会自动添加一个值</span></div><div class="line">colors[<span class="number">99</span>] = <span class="string">'red'</span>;</div><div class="line">alert(colors.length);<span class="comment">//100</span></div></pre></td></tr></table></figure></p>
+<p><strong>检测数组</strong>: Array.isArray(colors);   </p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>这里只例句常用的，想要详细的数组方法，请<a href="/Subpage/JavaScript/arraymethod.html">点击这里</a>打开网页后Ctrl+F查找方法，例如：迭代   </p>
+<h3 id="栈方法（后进先出）-添加删除项"><a href="#栈方法（后进先出）-添加删除项" class="headerlink" title="栈方法（后进先出）/添加删除项"></a>栈方法（后进先出）/添加删除项</h3><p>方法名：<strong>push() &amp;&amp; pop()</strong>   </p>
+<p>push()方法可接收任意参数，并<strong>添加到数组末尾</strong>，并返回修改后数组长度。<br>pop()方法从数组末尾<strong>删除最后一项</strong>，返回移除的项。   </p>
+<p>例：   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> number = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> count = number.push(<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>);<span class="comment">//推入三项</span></div><div class="line">alert(count);<span class="comment">//3</span></div><div class="line"><span class="keyword">var</span> item = number.pop();<span class="comment">//取出最后一项</span></div><div class="line">alert(item);<span class="comment">//30</span></div></pre></td></tr></table></figure>
+<h3 id="队列方法（先进后出）-删除添加项"><a href="#队列方法（先进后出）-删除添加项" class="headerlink" title="队列方法（先进后出）/删除添加项"></a>队列方法（先进后出）/删除添加项</h3><p>方法名： <strong>shift() &amp;&amp; unshift()</strong>   </p>
+<p>shift() <strong>移除数组第一项</strong> 并返回该项。   </p>
+<p>unshift() <strong>在数组前端添加任意个项</strong>并返回数组长度   </p>
+<p>例：   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'blue'</span>,<span class="string">'green'</span>];</div><div class="line">	<span class="keyword">var</span> item = colors.shift();</div><div class="line">	alert(item);<span class="comment">//red</span></div><div class="line">	<span class="keyword">var</span> count = colors.unshift(<span class="string">'red'</span>,<span class="string">'yellow'</span>);</div><div class="line">	alert(count);<span class="comment">//4</span></div><div class="line"><span class="string">``</span><span class="string">`   </span></div><div class="line"></div><div class="line">### 重排/排序</div><div class="line"></div><div class="line">方法名： **reverse() &amp;&amp; sort()**   </div><div class="line"></div><div class="line">reverse() 把数组翻转   </div><div class="line"></div><div class="line">sort() 调用每一项的toString()方法后比较字符串大小排序（不好排序数字）   </div><div class="line"></div><div class="line">sort()有一个办法可以解决排序数字   </div><div class="line"></div><div class="line">例：   </div><div class="line"></div><div class="line">`<span class="string">``</span>JS</div><div class="line">	<span class="keyword">var</span> values = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line">	<span class="keyword">var</span> values1 = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">15</span>];</div><div class="line">	values.reverse();</div><div class="line">	alert(values);<span class="comment">//5,4,3,2,1</span></div><div class="line">	values1.sort();</div><div class="line">	alert(values1);<span class="comment">//0,1,10,15,5</span></div></pre></td></tr></table></figure>
+<p>明显看出sort()方法的缺陷，但是可以通过下面的办法解决：   </p>
+<p>sort()方法<strong>接受一个比较函数作为参数</strong>：   第一个应该位于第二个之前则返回负数，相同则返回0，第一个应该位于第二个之后则返回正数。</p>
+<p>列：   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> values = [<span class="number">0</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">10</span>,<span class="number">15</span>];</div><div class="line">values.sort(compare);</div><div class="line">alert(values);<span class="comment">//15,10,5,1,0</span></div><div class="line"><span class="comment">//比较函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">compare</span>(<span class="params">value1,value2</span>)</span>&#123;</div><div class="line">	<span class="keyword">return</span> value2 - value1;</div><div class="line">	<span class="comment">// 想要改变排序方式只需把value2-value1改成value1-value2</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="操作方法-复制、删除、替换、插入"><a href="#操作方法-复制、删除、替换、插入" class="headerlink" title="操作方法/复制、删除、替换、插入"></a>操作方法/复制、删除、替换、插入</h3><p>方法名： <strong> concat() &amp;&amp; slice() &amp;&amp; splice() </strong>   </p>
+<p>concat():基于当前数组中所有项创建一个新数组。   </p>
+<p>例：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'blue'</span>];</div><div class="line"><span class="keyword">var</span> colors2 = [<span class="string">'green'</span>,<span class="string">'yellow'</span>];</div><div class="line"><span class="keyword">var</span> colors3 = colors.concat(colors2);</div><div class="line">alert(colors3);<span class="comment">//red,blue,green,yellow</span></div><div class="line"><span class="comment">//复制了colors并把colors2数组拼接到colors后形成一个新的数组返回给colors3</span></div></pre></td></tr></table></figure></p>
+<p>slice():基于<strong>当前数组中的一项或多项</strong> 创建一个新数组。   </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'green'</span>,<span class="string">'blue'</span>,<span class="string">'yellow'</span>,<span class="string">'purple'</span>];</div><div class="line"><span class="keyword">var</span> colors2 = colors.slice(<span class="number">1</span>);<span class="comment">//一个参数代表从下标1开始到数组结尾</span></div><div class="line"><span class="keyword">var</span> colors3 = colors.slice(<span class="number">1</span>,<span class="number">4</span>);<span class="comment">//两个参数从下标1开始到下标4的项，不包括第4项</span></div><div class="line">alert(colors2);<span class="comment">//green,blue,yellow,purple</span></div><div class="line">alert(colors3);<span class="comment">//green,blue,yellow 这里没有包含第colors[4]项</span></div></pre></td></tr></table></figure>
+<p>splice(): 这个方法是最强大的数组方法。这里不做太多解释，<a href="/Subpage/JavaScript/arraymethod.html">点击这里</a>打开网页后Ctrl+F查找方法，例如：插入/替换</p>
 
       
 
@@ -246,11 +250,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">C#</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
         		</li>
       		
 		</ul>
@@ -306,7 +306,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/07/01/JavaScript/JavaScript-数组方法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -320,18 +320,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/05/16/JavaScript/pokerGame/JS扑克牌小游戏-二/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS扑克牌小游戏(二)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/05/12/C/TelephoneBook/C语言之电话溥-一/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">C语言之电话溥(一)</div>
+    <a href="/2017/06/17/C Sharp/C-笔记——定义类/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C#笔记——定义类</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -347,8 +338,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "https://cczeng.github.io/2017/05/16/C Sharp/C-笔记——面向对象编程简介/", 
-    sourceId: "C Sharp/C-笔记——面向对象编程简介",
+    url: "https://cczeng.github.io/2017/07/01/JavaScript/JavaScript-数组方法/", 
+    sourceId: "JavaScript/JavaScript-数组方法",
     productKey: "fd9aceff07134e4f9c230333725250f0",
     target: "cloud-tie-wrapper"
   };
