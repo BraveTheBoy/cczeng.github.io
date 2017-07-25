@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://cczeng.github.io/2017/07/25/Angular2/angular之英雄之路问题指南/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
 <meta property="og:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。">
-<meta property="og:updated_time" content="2017-07-25T05:31:08.704Z">
+<meta property="og:updated_time" content="2017-07-25T05:33:42.089Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular之英雄之路问题指南">
 <meta name="twitter:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。">
@@ -182,18 +182,18 @@
       
         <p>本篇博文简单汇总一下根据angular官方<a href="https://angular.cn/docs/ts/latest/tutorial/" target="_blank" rel="external">教程: 英雄指南</a> 来学习的时候碰见的常见问题。    </p>
 <a id="more"></a>
-<h3 id="1、使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败"><a href="#1、使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败" class="headerlink" title="1、使用官方 快速起步种子 之后导致 ng build –prod 发布失败"></a>1、使用官方 快速起步种子 之后导致 ng build –prod 发布失败</h3><p>在我们安装@angular/cli之后，使用官方的快速起步种子编写好之后，发现<code>ng serve</code> <code>ng build --prod</code> 等命令报错，这是因为官方的起步种子和你安装的@angular/cli里面引用的版本不一样，解决办法：   </p>
+<h2 id="1、使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败"><a href="#1、使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败" class="headerlink" title="1、使用官方 快速起步种子 之后导致 ng build –prod 发布失败"></a>1、使用官方 快速起步种子 之后导致 ng build –prod 发布失败</h2><p>在我们安装@angular/cli之后，使用官方的快速起步种子编写好之后，发现<code>ng serve</code> <code>ng build --prod</code> 等命令报错，这是因为官方的起步种子和你安装的@angular/cli里面引用的版本不一样，解决办法：   </p>
 <blockquote>
 <p>使用 ng new demo 新建命令，而不使用快速起步种子即可解决，或者自行修改 package.json 文件   </p>
 </blockquote>
-<h3 id="2、HTTP-模拟本地WebAPI-没有找到-angular-in-memory-web-api-错误"><a href="#2、HTTP-模拟本地WebAPI-没有找到-angular-in-memory-web-api-错误" class="headerlink" title="2、HTTP 模拟本地WebAPI 没有找到 angular-in-memory-web-api 错误"></a>2、HTTP 模拟本地WebAPI 没有找到 angular-in-memory-web-api 错误</h3><blockquote>
+<h2 id="2、HTTP-模拟本地WebAPI-没有找到-angular-in-memory-web-api-错误"><a href="#2、HTTP-模拟本地WebAPI-没有找到-angular-in-memory-web-api-错误" class="headerlink" title="2、HTTP 模拟本地WebAPI 没有找到 angular-in-memory-web-api 错误"></a>2、HTTP 模拟本地WebAPI 没有找到 angular-in-memory-web-api 错误</h2><blockquote>
 <p>HttpModule并不是 Angular 的核心模块。 它是 Angular 用来进行 Web 访问的一种可选方式，并位于一个名叫 @angular/http 的独立附属模块中，并作为 Angular 的 npm 包之一而发布出来。</p>
 </blockquote>
 <p>angular官方文档就已经说明了，这个模块并不是angular的核心模块，所以我们要自己引入这个模块：</p>
 <blockquote>
 <p>在 <code>package.json</code> 文件里 <code>devDependencies</code> 中添加一句 ： <code>&quot;angular-in-memory-web-api&quot;: &quot;~0.1.13&quot;</code><br>删除node_modules 文件，重新安装依赖：npm install即可解决</p>
 </blockquote>
-<h3 id="3、发布出来部署到服务器上之后刷新、复制URL导致404错误"><a href="#3、发布出来部署到服务器上之后刷新、复制URL导致404错误" class="headerlink" title="3、发布出来部署到服务器上之后刷新、复制URL导致404错误"></a>3、发布出来部署到服务器上之后刷新、复制URL导致404错误</h3><p>这是因为当你刷新/复制URL进浏览器，浏览器会默认去寻找后台路由，而不是进入index.html由angular 的路由进行引导，所以就会出现404错误，解决办法：</p>
+<h2 id="3、发布出来部署到服务器上之后刷新、复制URL导致404错误"><a href="#3、发布出来部署到服务器上之后刷新、复制URL导致404错误" class="headerlink" title="3、发布出来部署到服务器上之后刷新、复制URL导致404错误"></a>3、发布出来部署到服务器上之后刷新、复制URL导致404错误</h2><p>这是因为当你刷新/复制URL进浏览器，浏览器会默认去寻找后台路由，而不是进入index.html由angular 的路由进行引导，所以就会出现404错误，解决办法：</p>
 <ol>
 <li>写一个渲染页面的后台路由，所有路由都返回一个页面，如index.html，然后页面就可以捕获路由自己处理了</li>
 <li>设置IIS的url rewrite</li>
@@ -488,11 +488,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JS</a>
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">C#</a>
+                <a href="javascript:void(0)" class="js-tag color3">JS</a>
               </li>
              
               <li class="article-tag-list-item">
