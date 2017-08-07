@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://cczeng.github.io/img/blog/create6.png">
 <meta property="og:image" content="https://cczeng.github.io/img/blog/create7.png">
 <meta property="og:image" content="https://cczeng.github.io/img/blog/create8.png">
-<meta property="og:updated_time" content="2017-05-08T14:06:07.231Z">
+<meta property="og:updated_time" content="2017-08-07T14:48:36.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我是如何利用Github Pages搭建起我的博客，细数一路的坑">
 <meta name="twitter:description" content="1、前言其实早在这之前我就一直想过写博客,但由于种种原因一直没有去学习这方面的知识,最近半个月(从开始动手到搭建好)一直陆陆续续的在着手这方面的工作。从开始到搭建完成的过程中遇到了很多困难，因为在这之前对Github一点了解都没有导致满头雾水,不断的跳进一个又一个坑,甚至想过放弃.但最后结果想必都知道了。在写如何搭建之前我觉得我们应该先从头开始了解。">
@@ -263,10 +263,12 @@ hexo s
 </code></pre><p>此时刷新<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>页面就能看到新的主题了.   </p>
 <h2 id="使用Hexo-deploy部署到github"><a href="#使用Hexo-deploy部署到github" class="headerlink" title="使用Hexo deploy部署到github"></a>使用Hexo deploy部署到github</h2><p>还是编辑根目录下_config.yml文件   </p>
 <pre><code>deploy:
-type: git
-repo: git@github.com:cczeng/cczeng.github.io.git  #这里的网址填你自己的
-branch: master   
-</code></pre><p>保存后需要提前安装一个扩展：</p>
+    type: git
+    repo: git@github.com:cczeng/cczeng.github.io.git  #这里的网址填你自己的
+    branch: master   
+</code></pre><p><strong>此处感谢有网友帮忙指出错误,原文自第二行起由于疏忽没有缩进 </strong></p>
+<p>具体配置可参考<a href="https://github.com/cczeng/BlogBackup" target="_blank" rel="external">我的博客备份</a>  </p>
+<p>保存后需要提前安装一个扩展：</p>
 <pre><code>npm install hexo-deployer-git --save   
 </code></pre><p>接下来就是将Hexo部署到我们的Github仓库上   </p>
 <h1 id="三、部署到Github"><a href="#三、部署到Github" class="headerlink" title="三、部署到Github"></a>三、部署到Github</h1><h2 id="1-检查SSH-keys的设置"><a href="#1-检查SSH-keys的设置" class="headerlink" title="1.检查SSH keys的设置"></a>1.检查SSH keys的设置</h2><p>以下命令均是在Git bash里输入   </p>
@@ -569,7 +571,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">C</a>
+                <a href="javascript:void(0)" class="js-tag color3">Angular</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -577,7 +579,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Angular</a>
+                <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -589,15 +591,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">CSS3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">ubuntu</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">CSS3</a>
               </li>
             
             <div class="clearfix"></div>
