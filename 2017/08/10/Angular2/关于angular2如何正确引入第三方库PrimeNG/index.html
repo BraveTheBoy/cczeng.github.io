@@ -7,18 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://cczeng.github.io">
-  <title>Archives: 2017 | 曾亮的博客 | 诗和远方</title>
+  <title>关于angular2如何正确引入第三方库PrimeNG | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
-<meta name="keywords" content="前端,js,Angular2,C,程序猿,曾亮,博客,cczeng,码农,曾亮的博客,诗和远方">
-<meta property="og:type" content="website">
-<meta property="og:title" content="曾亮的博客 | 诗和远方">
-<meta property="og:url" content="https://cczeng.github.io/archives/2017/index.html">
+  <meta name="description" content="最近学习Angular2,需要使用PrimeNG库,结果死活按照官方教程和各种方法来发现出不来样式,但是功能却正常,整整花了有1天多一点时间排查错误和解决问题,今天终于给解决了。    如果你也是这个问题,那不妨点进来看看。">
+<meta name="keywords" content="Angular,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于angular2如何正确引入第三方库PrimeNG">
+<meta property="og:url" content="https://cczeng.github.io/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
+<meta property="og:description" content="最近学习Angular2,需要使用PrimeNG库,结果死活按照官方教程和各种方法来发现出不来样式,但是功能却正常,整整花了有1天多一点时间排查错误和解决问题,今天终于给解决了。    如果你也是这个问题,那不妨点进来看看。">
+<meta property="og:updated_time" content="2017-08-10T14:37:44.574Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="曾亮的博客 | 诗和远方">
-<meta name="twitter:description" content="江西环境工程职业学院2013级,擅长前端技能，深入了解C语言，目前正在学习C#">
+<meta name="twitter:title" content="关于angular2如何正确引入第三方库PrimeNG">
+<meta name="twitter:description" content="最近学习Angular2,需要使用PrimeNG库,结果死活按照官方教程和各种方法来发现出不来样式,但是功能却正常,整整花了有1天多一点时间排查错误和解决问题,今天终于给解决了。    如果你也是这个问题,那不妨点进来看看。">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
   
@@ -159,36 +160,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Angular2/关于angular2如何正确引入第三方库PrimeNG" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      关于angular2如何正确引入第三方库PrimeNG
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/" class="archive-article-date">
+
+        
+        <a href="/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/" class="archive-article-date">
   	<time datetime="2017-08-10T14:18:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/">关于angular2如何正确引入第三方库PrimeNG</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近学习Angular2,需要使用PrimeNG库,结果死活按照官方教程和各种方法来发现出不来样式,但是功能却正常,整整花了有1天多一点时间排查错误和解决问题,今天终于给解决了。   </p>
+<p>如果你也是这个问题,那不妨点进来看看。   </p>
+<a id="more"></a>
+<p>由于我使用的是Angular-cli脚手架创建的项目,所以按照官方的教程,应该是：   </p>
+<p>1.在<code>package.json</code>添加：</p>
+<pre><code><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">"dependencies": &#123;</div><div class="line">  //...</div><div class="line">  "primeng": "^4.1.0",</div><div class="line">  "font-awesome": "^4.7.0"</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><p>2.在 <code>.angular-cli.json</code> 添加：</p>
+<pre><code><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">"styles": [</div><div class="line">  "../node_modules/font-awesome/css/font-awesome.min.css",</div><div class="line">  "../node_modules/primeng/resources/primeng.min.css",</div><div class="line">  "../node_modules/primeng/resources/themes/omega/theme.css",</div><div class="line">  //...</div><div class="line">]</div></pre></td></tr></table></figure>
+</code></pre><p>刚开始是发现报错,没有导入他的组件,后面有东西出现了,但是却没有样式。找来找去花了一天时间,人都快绝望了。   </p>
+<p>最后终于发现了问题,我同学那边可以正常使用官方的种子启动,我这边却怎么也启动不起来。后来发现好像和npm有关,想起我自己使用的是cnpm,就问他的是什么,结果他的是npm就发现问题应该出在这(排除了好多问题),最后我试着去找 <code>node_modules</code> 目录下是否有css文件的时候答案就出现了。   </p>
+<p><strong>由于使用cnpm安装的,cnpm会自动添加版本号</strong> 导致 <strong>文件路径错误</strong>  </p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>请查找 <code>node_modules</code> 文件夹下你要引入的css样式文件目录在哪,并手动修改正确路径：</p>
+<pre><code>&gt; 范例： **locate primeng.min.css** //由于我用的是ubuntu所以使用locate命令,windwos直接搜索文件即可
+&gt; 输出:  **/home/zl/WebstormProjects/YDB-WeChat/node_modules/_primeng@4.1.2@primeng/resources/primeng.min.css**
+&gt; 这里显示路径为：**/node_modules/_primeng@4.1.2@primeng/resources/primeng.min.css**
+&gt; 所以把 .angular-cli.json 引入css相应路径修改为你本机模块的路径。
+&gt; **切记！cnpm安装的模块很可能加入版本号！！则路径那里也需要引入版本号**
+</code></pre><p>这是cnpm的一个坑,所以可以的话尽量使用npm.   </p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您的支持,我会继续努力<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -204,190 +252,97 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/10/Angular2/angular之英雄之路问题指南/" class="archive-article-date">
-  	<time datetime="2017-08-10T14:16:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-10</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/10/Angular2/angular之英雄之路问题指南/">angular之英雄之路问题指南</a>
-    </h1>
+  
+    <a href="/2017/08/10/Angular2/angular之英雄之路问题指南/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">angular之英雄之路问题指南</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Angular</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/02/ubuntu/利用shell脚本自动安装软件/" class="archive-article-date">
-  	<time datetime="2017-08-02T02:58:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/02/ubuntu/利用shell脚本自动安装软件/">利用shell脚本自动安装软件</a>
-    </h1>
+  <div id="SOHUCS"></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cysWBK2R1'; 
+var conf = 'c0d676145cb5b4242cedcdef8d2e97d6'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">shell</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/28/Angular2/Angular2-学习笔记/" class="archive-article-date">
-  	<time datetime="2017-07-28T09:36:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/28/Angular2/Angular2-学习笔记/">Angular2 学习笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Angular</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/25/Angular2/初识Angular2/" class="archive-article-date">
-  	<time datetime="2017-07-25T03:21:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/25/Angular2/初识Angular2/">初识Angular2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Angular</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="page-number" href="/archives/2017/page/3/">3</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -411,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

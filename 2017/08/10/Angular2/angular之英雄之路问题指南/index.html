@@ -9,19 +9,19 @@
   <link rel="dns-prefetch" href="https://cczeng.github.io">
   <title>angular之英雄之路问题指南 | 曾亮的博客 | 诗和远方</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。">
+  <meta name="description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。     创建时间：2017-07-25 12:32:05    最新更新时间：2017-08-10 22:16:05">
 <meta name="keywords" content="Angular,笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="angular之英雄之路问题指南">
-<meta property="og:url" content="https://cczeng.github.io/2017/07/25/Angular2/angular之英雄之路问题指南/index.html">
+<meta property="og:url" content="https://cczeng.github.io/2017/08/10/Angular2/angular之英雄之路问题指南/index.html">
 <meta property="og:site_name" content="曾亮的博客 | 诗和远方">
-<meta property="og:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。">
+<meta property="og:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。     创建时间：2017-07-25 12:32:05    最新更新时间：2017-08-10 22:16:05">
 <meta property="og:image" content="https://cczeng.github.io/img/angular/error_1.png">
 <meta property="og:image" content="https://cczeng.github.io/img/angular/warning_1.png">
-<meta property="og:updated_time" content="2017-07-28T08:15:36.966Z">
+<meta property="og:updated_time" content="2017-08-10T14:38:23.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular之英雄之路问题指南">
-<meta name="twitter:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。">
+<meta name="twitter:description" content="本篇博文简单汇总一下根据angular官方教程: 英雄指南 来学习的时候碰见的常见问题。     创建时间：2017-07-25 12:32:05    最新更新时间：2017-08-10 22:16:05">
 <meta name="twitter:image" content="https://cczeng.github.io/img/angular/error_1.png">
   
     <link rel="alternative" href="/atom.xml" title="曾亮的博客 | 诗和远方" type="application/atom+xml">
@@ -175,8 +175,8 @@
   
 
         
-        <a href="/2017/07/25/Angular2/angular之英雄之路问题指南/" class="archive-article-date">
-  	<time datetime="2017-07-25T04:32:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-25</time>
+        <a href="/2017/08/10/Angular2/angular之英雄之路问题指南/" class="archive-article-date">
+  	<time datetime="2017-08-10T14:16:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-10</time>
 </a>
         
       </header>
@@ -184,6 +184,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>本篇博文简单汇总一下根据angular官方<a href="https://angular.cn/docs/ts/latest/tutorial/" target="_blank" rel="external">教程: 英雄指南</a> 来学习的时候碰见的常见问题。    </p>
+<p>创建时间：2017-07-25 12:32:05   </p>
+<p>最新更新时间：2017-08-10 22:16:05</p>
 <a id="more"></a>
 <h1 id="官方文档——英雄之路系列"><a href="#官方文档——英雄之路系列" class="headerlink" title="官方文档——英雄之路系列"></a>官方文档——英雄之路系列</h1><h3 id="使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败"><a href="#使用官方-快速起步种子-之后导致-ng-build-–prod-发布失败" class="headerlink" title="使用官方 快速起步种子 之后导致 ng build –prod 发布失败"></a>使用官方 快速起步种子 之后导致 ng build –prod 发布失败</h3><p>在我们安装@angular/cli之后，使用官方的快速起步种子编写好之后，发现<code>ng serve</code> <code>ng build --prod</code> 等命令报错，这是因为官方的起步种子和你安装的@angular/cli里面引用的版本不一样，解决办法：   </p>
 <blockquote>
@@ -241,7 +243,16 @@ chunk    {1} main.80a10c4ad116096aaaaf.bundle.js (main) 421 bytes {3} [initial] 
 chunk    {2} styles.fd0e9b458fe0dc6cdf6a.bundle.css (styles) 69 bytes {4} [initial] [rendered]
 chunk    {3} vendor.ccededec441b60eb57ce.bundle.js (vendor) 849 kB [initial] [rendered]
 chunk    {4} inline.e873a66a192ef88965b4.bundle.js (inline) 0 bytes [entry] [rendered]
-</code></pre>
+</code></pre><h1 id="引入第三方库问题、出错系列"><a href="#引入第三方库问题、出错系列" class="headerlink" title="引入第三方库问题、出错系列"></a>引入第三方库问题、出错系列</h1><h3 id="引入第三方库没有css样式："><a href="#引入第三方库没有css样式：" class="headerlink" title="引入第三方库没有css样式："></a>引入第三方库没有css样式：</h3><p>问题：在项目的根目录下.angular-cli.json中引入第三方库的css文件没有效果。  </p>
+<pre><code>1. 是否使用 `npm install` 安装的 `node_module`,如果不是npm安装,请直接跳过第二点阅读第三点。  
+2. 检查 `.angular-cli.json` 文件中 `style:[]` 引用路径是否错误,正确路径以 `&apos;../node_modules/&apos;`开头,**不要省略 `../`**  
+3. 如果是 `cnpm install` 安装的(这个一个大坑,坑了一天时间找一个问题),请查找 `node_modules` 文件夹下你要引入的css样式文件目录在哪,并手动修改正确路径：
+    &gt; 范例： locate primeng.min.css //由于我用的是ubuntu所以使用locate命令,windwos直接搜索文件即可
+    &gt; 输出:  /home/zl/WebstormProjects/YDB-WeChat/node_modules/_primeng@4.1.2@primeng/resources/primeng.min.css
+    &gt; 这里显示路径为：/node_modules/_primeng@4.1.2@primeng/resources/primeng.min.css
+    &gt; **切记！cnpm安装的模块很可能加入版本号！！则路径那里也需要引入版本号**
+</code></pre><p>这是cnpm的一个坑,所以可以的话尽量使用npm.   </p>
+
       
 
       
@@ -345,7 +356,7 @@ chunk    {4} inline.e873a66a192ef88965b4.bundle.js (inline) 0 bytes [entry] [ren
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/07/25/Angular2/angular之英雄之路问题指南/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://cczeng.github.io/2017/08/10/Angular2/angular之英雄之路问题指南/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -359,18 +370,18 @@ chunk    {4} inline.e873a66a192ef88965b4.bundle.js (inline) 0 bytes [entry] [ren
   
 <nav id="article-nav">
   
-    <a href="/2017/07/28/Angular2/Angular2-学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/08/10/Angular2/关于angular2如何正确引入第三方库PrimeNG/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Angular2 学习笔记
+          关于angular2如何正确引入第三方库PrimeNG
         
       </div>
     </a>
   
   
-    <a href="/2017/07/25/Angular2/初识Angular2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">初识Angular2</div>
+    <a href="/2017/08/02/ubuntu/利用shell脚本自动安装软件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">利用shell脚本自动安装软件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -527,15 +538,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">ubuntu</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JS</a>
               </li>
              
               <li class="article-tag-list-item">
